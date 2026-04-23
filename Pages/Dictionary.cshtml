@@ -1,0 +1,64 @@
+﻿@page
+@model KopiCinta.Pages.DictionaryModel
+@{
+    ViewData["Title"] = "Dictionary";
+}
+<section class="section">
+    <div class="container">
+
+        <div class="section-head">
+            <p class="eyebrow">Sign Center</p>
+            <h2>Choose a topic to start learning</h2>
+            <p>
+                Explore sign language through simple topic books. Click a book, then flip through the pages inside.
+            </p>
+        </div>
+
+        <div class="dictionary-toolbar">
+            <input type="text" id="bookSearchInput" placeholder="Search topic books..." />
+        </div>
+
+        <div class="book-grid" id="bookGrid">
+            <button type="button" class="book-card" data-book="greeting" data-title="Greeting">
+                <div class="book-cover red">
+                    <span class="book-label">Topic Book</span>
+                    <h3>Greeting</h3>
+                    <div class="book-mini-lines"></div>
+                </div>
+            </button>
+
+            <button type="button" class="book-card" data-book="daily" data-title="Daily">
+                <div class="book-cover cream">
+                    <span class="book-label">Topic Book</span>
+                    <h3>Daily</h3>
+                    <div class="book-mini-lines"></div>
+                </div>
+            </button>
+
+            <button type="button" class="book-card" data-book="feelings" data-title="Feelings">
+                <div class="book-cover white">
+                    <span class="book-label">Topic Book</span>
+                    <h3>Feelings</h3>
+                    <div class="book-mini-lines"></div>
+                </div>
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<div id="bookViewer" class="book-viewer hidden" aria-hidden="true">
+    <div class="book-modal">
+        <div class="book-viewer-top">
+            <button type="button" class="viewer-back-btn" id="viewerBackBtn">← Back to Topics</button>
+            <div class="viewer-topic" id="viewerTopic">Topic</div>
+           
+        </div>
+
+        <div class="flipbook-wrap">
+            <div id="flipBook" class="flip-book"></div>
+        </div>
+
+        <p class="swipe-hint">Swipe or drag the page corners</p>
+    </div>
+</div>

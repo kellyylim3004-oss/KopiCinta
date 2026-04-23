@@ -1,0 +1,171 @@
+﻿@page
+@model KopiCinta.Pages.KopiCintaGoesToRanzModel
+@{
+    ViewData["Title"] = "Kopi Cinta Goes to Ranz";
+}
+
+<section class="section">
+    <div class="container">
+
+        <!-- BACK -->
+        <div class="back-top reveal">
+            <a asp-page="/Collaborations">← Back</a>
+        </div>
+
+        <!-- HERO -->
+        <div class="event-hero reveal">
+            <div class="event-hero-text">
+                <p class="eyebrow">Collaborations & Campaigns</p>
+                <h2>Kopi Cinta Goes to RANS Carnival Malang</h2>
+
+                <p class="event-intro">
+                    A moment to be seen — where Kopi Cinta stepped into a wider public space
+                    and shared its experience with more people than ever before.
+                </p>
+
+                <div class="event-tags">
+                    <span>Public Event</span>
+                    <span>Brand Exposure</span>
+                    <span>Meaningful Interaction</span>
+                </div>
+            </div>
+
+            <div class="event-hero-img">
+                <img src="/images/ranz/25.jpg" alt="Raffi Ahmad visiting Kopi Cinta at RANS Carnival">
+            </div>
+        </div>
+
+        <!-- INTRO STORY -->
+        <div class="hbii-block reveal">
+            <div class="hbii-block-text">
+                <p class="hbii-label">A Moment to Be Seen</p>
+                <h3>More Than Just a Booth</h3>
+
+                <p>
+                    There are moments when a journey begins to be seen by more people.
+                    For us, one of those moments happened when we joined RANS Carnival in Malang.
+                </p>
+
+                <p>
+                    Among various booths of local businesses, food, drinks, and games,
+                    we brought Kopi Cinta as a small space offering something different.
+                </p>
+
+                <p>
+                    We were not there just to sell, but to share an experience.
+                </p>
+            </div>
+
+            <div class="hbii-block-card">
+                <h4>What We Brought</h4>
+                <ul>
+                    <li>Kopi Cinta signature drinks</li>
+                    <li>Merchandise that carried our story</li>
+                    <li>Sign language ordering experience</li>
+                    <li>A new way for people to connect</li>
+                </ul>
+            </div>
+        </div>
+
+        
+
+        <!-- STORY SECTION 1 -->
+        <div class="kbi-section reveal">
+            <div class="kbi-img">
+                <img src="/images/ranz/23.jpg" alt="">
+            </div>
+
+            <div class="kbi-text">
+                <h3>A Different Way to Order</h3>
+                <p>
+                    As always, we invited everyone to order using sign language,
+                    with simple tutorials provided on the spot.
+                </p>
+                <p>
+                    In the middle of the crowd, many meaningful interactions happened —
+                    curiosity, laughter, and the joy of trying a new way to communicate
+                    for the first time.
+                </p>
+            </div>
+        </div>
+
+        <!-- STORY SECTION 2 -->
+        <div class="kbi-section reverse reveal">
+            <div class="kbi-img">
+                <img src="/images/ranz/raffi.jpg" alt="">
+            </div>
+
+            <div class="kbi-text">
+                <h3>A Memorable Highlight</h3>
+                <p>
+                    One of the most memorable moments of the event was when
+                    Raffi Ahmad visited our booth.
+                </p>
+                <p>
+                    From that point, Kopi Cinta began to reach a wider audience —
+                    allowing our story to be known by more people.
+                </p>
+            </div>
+        </div>
+        <div class="featured-grid reveal">
+            <img src="/images/ranz/2.jpg" alt="">
+            <img src="/images/ranz/3.jpg" alt="">
+            <img src="/images/ranz/4.jpg" alt="">
+        </div>
+
+        <!-- STORY SECTION 3 -->
+        <div class="hbii-feature reveal">
+            <div class="hbii-feature-card">
+                <p class="hbii-label">Beyond Exposure</p>
+                <h3>It Was About the Experience</h3>
+                <p>
+                    For us, being part of RANS Carnival was not just about exposure.
+                    It was about the experience.
+                </p>
+                <p>
+                    It was a moment where our team could engage directly,
+                    learn, adapt, and grow through a new environment.
+                </p>
+            </div>
+
+            <div class="hbii-feature-card soft">
+                <p class="hbii-label">What We Brought Home</p>
+                <h3>More Than Results</h3>
+                <p>
+                    From the event, we brought home something more than just results.
+                </p>
+                <p>
+                    We carried back a meaningful experience — one that will stay with us
+                    as part of our journey moving forward.
+                </p>
+            </div>
+        </div>
+
+        <!-- ENDING -->
+        <div class="hbii-ending reveal">
+            <h3>Sharing CINTA with More People</h3>
+            <p>
+                In the end, every small step we take brings us closer
+                to sharing CINTA with more people.
+            </p>
+        </div>
+
+        <!-- GALLERY -->
+        <div class="detail-section reveal">
+            <h3 style="margin-bottom:1rem;">Event Gallery</h3>
+
+            <div class="gallery-grid">
+                @for (int i = 2; i <= 30; i++)
+                {
+                    <img src="/images/ranz/@(i).jpg" class="gallery-img" alt="">
+                }
+            </div>
+        </div>
+        <br>
+        <!-- BACK -->
+        <div class="detail-back reveal">
+            <a asp-page="/Collaborations" class="btn btn-secondary">← Back to Collaborations</a>
+        </div>
+
+    </div>
+</section>

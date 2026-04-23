@@ -1,0 +1,186 @@
+﻿@page
+@model KopiCinta.Pages.ProjectEModel
+@{
+    ViewData["Title"] = "Kopi Cinta x Project E";
+}
+
+<section class="section">
+    <div class="container">
+
+        <!-- BACK -->
+        <div class="back-top reveal">
+            <a asp-page="/Collaborations">← Back</a>
+        </div>
+
+        <!-- HERO -->
+        <div class="event-hero reveal">
+
+            <div class="event-hero-text">
+                <p class="eyebrow">Collaborations & Campaigns</p>
+                <h2>Kopi Cinta x Project E</h2>
+
+                <p class="event-intro">
+                    Learning by sharing — where education meets compassion,
+                    creating a space that goes beyond the classroom.
+                </p>
+
+                <div class="event-tags">
+                    <span>Education</span>
+                    <span>CSR Initiative</span>
+                    <span>Giving Back</span>
+                </div>
+            </div>
+
+            <div class="event-hero-img">
+                <img src="/images/project-e/2.jpg" alt="">
+            </div>
+
+        </div>
+
+        <!-- INTRO -->
+        <div class="hbii-block reveal">
+
+            <div class="hbii-block-text">
+                <p class="hbii-label">Learning by Sharing</p>
+                <h3>More Than Just Learning</h3>
+
+                <p>
+                    For us, learning never stands alone.
+                    There is always space to give within it.
+                </p>
+
+                <p>
+                    Through Kopi Cinta x Project E, we bring together
+                    two things we believe in: education and compassion.
+                </p>
+
+                <p>
+                    Project E itself is part of a CSR initiative under Harmoni,
+                    creating a meaningful connection between learning and impact.
+                </p>
+            </div>
+
+            <div class="hbii-block-card">
+                <h4>What Makes It Different</h4>
+                <ul>
+                    <li>No monetary fee</li>
+                    <li>Open to public participants</li>
+                    <li>Based on meaningful contribution</li>
+                    <li>Linked to social impact initiatives</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- SECTION 1 -->
+        <div class="kbi-section reveal">
+
+            <div class="kbi-img">
+                <img src="/images/project-e/hero.jpg" alt="">
+            </div>
+
+            <div class="kbi-text">
+                <h3>A Different Way to Learn</h3>
+
+                <p>
+                    During special moments such as International Day of Persons
+                    with Disabilities and other meaningful occasions,
+                    we host sign language classes open to everyone.
+                </p>
+
+                <p>
+                    But there is one key difference — participants do not pay with money.
+                </p>
+            </div>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="kbi-section reverse reveal">
+
+            <div class="kbi-img">
+                <img src="/images/project-e/13.jpg" alt="">
+            </div>
+
+            <div class="kbi-text">
+                <h3>Pay with Meaning</h3>
+
+                <p>
+                    Instead, participants are invited to bring something meaningful —
+                    a small act of care.
+                </p>
+
+                <p>
+                    Whether it is gifts for children, or items that represent “love”,
+                    each contribution carries a story behind it.
+                </p>
+            </div>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div class="hbii-feature reveal">
+
+            <div class="hbii-feature-card">
+                <p class="hbii-label">From Learning to Giving</p>
+                <h3>Beyond the Classroom</h3>
+
+                <p>
+                    All contributions do not stop within the class.
+                </p>
+
+                <p>
+                    Through Project E, they are distributed to communities
+                    and individuals in need — from foundations, orphanages,
+                    to everyday people who require support.
+                </p>
+            </div>
+
+            <div class="hbii-feature-card soft">
+                <p class="hbii-label">Meaningful Impact</p>
+                <h3>Small Actions, Bigger Change</h3>
+
+                <p>
+                    What starts as a simple class becomes something larger —
+                    a continuous cycle of learning, giving, and impact.
+                </p>
+
+                <p>
+                    Because we believe learning becomes more meaningful
+                    when it leads to real action.
+                </p>
+            </div>
+        </div>
+
+        <!-- ENDING -->
+        <div class="hbii-ending reveal">
+            <h3>Growing Impact Together</h3>
+
+            <p>
+                Through Kopi Cinta x Project E, we aim to create a complete experience:
+                to learn, to feel, and to give.
+            </p>
+
+            <p>
+                Because in the end, love is not only meant to be understood —
+                but to be shared.
+            </p>
+        </div>
+
+        <!-- GALLERY -->
+        <div class="detail-section reveal">
+            <h3 style="margin-bottom:1rem;">Gallery</h3>
+
+            <div class="gallery-grid">
+                @for (int i = 1; i <= 18; i++)
+                {
+                    <img src="/images/project-e/@(i).jpg" class="gallery-img" />
+                }
+            </div>
+        </div>
+        <br>
+        <!-- BACK -->
+        <div class="detail-back reveal">
+            <a asp-page="/Collaborations" class="btn btn-secondary">← Back to Collaborations</a>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@(ViewData["Title"] ?? "Kopi Cinta")</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <script src="https://unpkg.com/page-flip/dist/js/page-flip.browser.js"></script>
+</head>
+<body>
+    <div class="page-noise"></div>
+
+    <header class="site-header" id="top">
+        <div class="container nav-wrap">
+            <a asp-page="/Index" class="brand">
+                <img src="~/images/logo-kopi-cinta.png" alt="Kopi Cinta Logo" class="site-logo" />
+                <div class="brand-copy">
+                    <strong>Kopi Cinta</strong>
+                    <small>Stories, signs, and shared perspectives</small>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+
+            <nav class="site-nav" id="siteNav">
+                <a asp-page="/Index">Home</a>
+
+                <div class="nav-dropdown">
+                    <div class="dropdown-head">
+                        <button type="button" class="dropdown-link dropdown-trigger">About</button>
+                    </div>
+                    <div class="dropdown-panel dropdown-panel-grid">
+                        <a asp-page="/About" class="dropdown-card">
+                            <div class="dropdown-img"></div>
+                            <strong>Our Story</strong>
+                            <span>What, who, why, and where behind Kopi Cinta.</span>
+                        </a>
+
+                        <a asp-page="/Team" class="dropdown-card">
+                            <div class="dropdown-img"></div>
+                            <strong>Team</strong>
+                            <span>Meet the people behind the initiative.</span>
+                        </a>
+
+                        <a asp-page="/About" class="dropdown-card">
+                            <div class="dropdown-img"></div>
+                            <strong>Careers</strong>
+                            <span>Explore future opportunities and growth.</span>
+                        </a>
+
+                        <a asp-page="/Contact" class="dropdown-card">
+                            <div class="dropdown-img"></div>
+                            <strong>Contact Us</strong>
+                            <span>Find ways to connect and collaborate.</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-dropdown">
+              
+                 
+                        <div class="dropdown-head">
+                            <button type="button" class="dropdown-link dropdown-trigger">Experiences</button>
+                        </div>
+                        <div class="dropdown-panel dropdown-panel-grid">
+                        <a href="/Workshops" class="dropdown-card">
+                            <div class="dropdown-img" style="background-image:url('/images/dropdown/workshops-dropdown.jpg');"></div>
+                            <strong>Workshops & Learning</strong>
+                            <span>Interactive sign language learning sessions</span>
+                        </a>
+
+                            <a asp-page="/Community" class="dropdown-card">
+                                <div class="dropdown-img"></div>
+                                <strong>Community & Outreach</strong>
+                                <span>Giving back and community-based initiatives.</span>
+                            </a>
+
+                            <a asp-page="/Collaborations" class="dropdown-card">
+                                <div class="dropdown-img"></div>
+                                <strong>Collaborations & Campaigns</strong>
+                                <span>Partnerships and special campaign projects.</span>
+                            </a>
+
+                            <a asp-page="/Events" class="dropdown-card">
+                                <div class="dropdown-img"></div>
+                                <strong>Events & Engagements</strong>
+                                <span>University visits and public engagements.</span>
+                            </a>
+                        </div>
+                    </div>
+                
+
+                <div class="nav-dropdown">
+                    <div class="dropdown-head">
+                        <button type="button" class="dropdown-link dropdown-trigger">Sign Center</button>
+                    </div>
+                    <div class="dropdown-panel dropdown-panel-grid">
+                        <a asp-page="/Dictionary" class="dropdown-card">
+                            <div class="dropdown-img"></div>
+                            <strong>Dictionary</strong>
+                            <span>Explore sign language topics through the interactive book.</span>
+                        </a>
+
+                        
+
+                        <a asp-page="/Game" class="dropdown-card">
+                            <div class="dropdown-img"></div>
+                            <strong>Game</strong>
+                            <span>Learn in a fun and interactive way.</span>
+                        </a>
+
+                        
+                    </div>
+                </div>
+
+                <a asp-page="/TuliTalks">Tuli Talks</a>
+                <a asp-page="/Stories">Perspectives</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="container footer-main">
+
+            <!-- LEFT -->
+            <div class="footer-brand">
+                <img src="~/images/logo-kopi-cinta.png"
+                     class="footer-logo"
+                     style="height:28px; max-width:100px; width:auto;" />
+                <p>
+                    A warm space for stories, sign language, and shared understanding.
+                </p>
+
+                <a href="https://instagram.com/_kopicinta_" target="_blank" class="footer-cta">
+                    Connect on Instagram →
+                </a>
+            </div>
+
+            <!-- MIDDLE -->
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a asp-page="/Index">Home</a>
+                <a asp-page="/Stories">Stories</a>
+                <a asp-page="/Projects">Programs</a>
+                <a asp-page="/Dictionary">Sign Center</a>
+                <a asp-page="/Game">Game</a>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="footer-links">
+                <h4>Get Involved</h4>
+                <a asp-page="/Contact">Collaborate</a>
+                <a asp-page="/Contact">Workshops</a>
+                <a asp-page="/Contact">Partnerships</a>
+                <a href="https://instagram.com/_kopicinta_" target="_blank">Instagram DM</a>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+            <p>© Kopi Cinta — Building connection through language and community</p>
+        </div>
+
+    </footer>
+
+    <script src="~/js/script.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

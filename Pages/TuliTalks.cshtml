@@ -1,0 +1,130 @@
+﻿@page
+@model KopiCinta.Pages.TuliTalksModel
+@{
+    ViewData["Title"] = "Tuli Talks";
+}
+
+<section class="section">
+    <div class="container">
+
+        <!-- HERO -->
+        <div class="tt-hero reveal">
+            <p class="eyebrow">Tuli Talks</p>
+            <h2>Learn Sign Language Through Everyday Topics</h2>
+            <p class="tt-intro">
+                A collection of short video lessons designed to make sign language
+                easier, more approachable, and more connected to daily life.
+            </p>
+        </div>
+        <div class="tt-toolbar reveal">
+    <input type="text" id="ttSearch" placeholder="Search topics..." />
+</div>
+
+        <!-- VIDEO GRID -->
+        <div class="tt-grid">
+
+            <!-- 1 -->
+            <div class="tt-card reveal" data-video="/videos/tulitalks/sibi-dan-bisindo.mp4">
+                <div class="tt-video">
+                    <video muted loop preload="auto" playsinline>
+                        <source src="/videos/tulitalks/sibi-dan-bisindo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="tt-content">
+                    <h4>SIBI and BISINDO</h4>
+                    <p>Understand the difference between SIBI and BISINDO and how they are used.</p>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="tt-card reveal" data-video="/videos/tulitalks/selamat-ulang-tahun.mp4">
+                <div class="tt-video">
+                    <video muted loop preload="auto" playsinline>
+                        <source src="/videos/tulitalks/selamat-ulang-tahun.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="tt-content">
+                    <h4>Happy Birthday</h4>
+                    <p>Learn how to sign birthday greetings in a warm and meaningful way.</p>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="tt-card reveal" data-video="/videos/tulitalks/social-media.mp4">
+                <div class="tt-video">
+                    <video muted loop preload="auto" playsinline>
+                        <source src="/videos/tulitalks/social-media.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="tt-content">
+                    <h4>Social Media</h4>
+                    <p>Explore common sign language expressions related to social media and online life.</p>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="tt-card reveal" data-video="/videos/tulitalks/percakapan-sehari-hari.mp4">
+                <div class="tt-video">
+                    <video muted loop preload="auto" playsinline>
+                        <source src="/videos/tulitalks/percakapan-sehari-hari.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="tt-content">
+                    <h4>Everyday Conversation</h4>
+                    <p>Practice signs used in daily conversations and simple interactions.</p>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="tt-card reveal" data-video="/videos/tulitalks/bahasa-gaul.mp4">
+                <div class="tt-video">
+                    <video muted loop preload="auto" playsinline>
+                        <source src="/videos/tulitalks/bahasa-gaul.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="tt-content">
+                    <h4>Slangs</h4>
+                    <p>Get familiar with casual expressions and slang used in everyday communication.</p>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="tt-card reveal" data-video="/videos/tulitalks/kata-ganti-orang.mp4">
+                <div class="tt-video">
+                    <video muted loop preload="auto" playsinline>
+                        <source src="/videos/tulitalks/kata-ganti-orang.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="tt-content">
+                    <h4>Pronouns</h4>
+                    <p>Learn how to express pronouns and refer to different people in sign language.</p>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="tt-card reveal" data-video="/videos/tulitalks/tempat-tempat-di-resto-harmoni.mp4">
+                <div class="tt-video">
+                    <video muted loop preload="auto" playsinline>
+                        <source src="/videos/tulitalks/tempat-tempat-di-resto-harmoni.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="tt-content">
+                    <h4>Places in Harmoni Resto</h4>
+                    <p>Discover signs for places and spaces commonly found around Resto Harmoni.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FULLSCREEN VIDEO VIEWER -->
+<div id="ttViewer" class="tt-viewer hidden">
+    <div class="tt-viewer-overlay"></div>
+
+    <div class="tt-viewer-content">
+        <video id="ttPlayer" controls autoplay playsinline></video>
+        <button id="ttClose" type="button">✕</button>
+    </div>
+</div>
