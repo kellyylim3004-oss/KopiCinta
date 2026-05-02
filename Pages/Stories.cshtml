@@ -3,48 +3,39 @@
 @{
     ViewData["Title"] = "Stories";
 }
+
 <section class="section">
     <div class="container">
 
-        <div class="section-head">
+        <!-- HEADER -->
+        <div class="section-head reveal">
             <p class="eyebrow">Stories & Perspectives</p>
-            <h2>Real stories. Real people. Real connection.</h2>
+            <h2>A space for shared voices.</h2>
             <p>
-                This is where voices are shared, experiences are highlighted, and the meaning behind learning sign language comes to life.
+                Soon, this page will become a blog where stories, reflections,
+                and experiences are shared — not only by us, but also by the people
+                who are part of the Kopi Cinta journey.
             </p>
         </div>
 
-        <!-- FEATURE -->
-        <article class="story-card large reveal">
-            <div class="story-tag">Featured</div>
-            <h3>“It started with just one sign…”</h3>
+        <!-- COMING SOON -->
+        <div class="hero-card reveal" style="max-width:720px; margin: 0 auto; text-align:center;">
+            <span class="pill">Coming Soon</span>
+            <h3>Stories are on the way.</h3>
             <p>
-                A journey into how one small step into sign language opened up a completely new way of connecting with others.
+                We’re preparing a space where both our team and our community
+                can share their perspectives — from workshops, interactions,
+                personal reflections, and moments that felt meaningful.
             </p>
-            <a href="#" class="text-link">Read full story →</a>
-        </article>
+            <p>
+                Because every experience holds a story,
+                and every story deserves to be shared.
+            </p>
+        </div>
 
-        <!-- GRID -->
-        <div class="intro-grid">
-
-            <article class="story-card reveal">
-                <div class="story-tag soft">Community</div>
-                <h3>Inside our sign language workshop</h3>
-                <p>Moments of learning, curiosity, and shared growth.</p>
-            </article>
-
-            <article class="story-card reveal">
-                <div class="story-tag soft">Perspective</div>
-                <h3>Why inclusivity matters in communication</h3>
-                <p>Breaking barriers through awareness and empathy.</p>
-            </article>
-
-            <article class="story-card reveal">
-                <div class="story-tag soft">Campaign</div>
-                <h3>Cinta Bahasa Isyarat highlights</h3>
-                <p>A look into the campaign that brought people together.</p>
-            </article>
-
+        <!-- OPTIONAL CTA -->
+        <div class="detail-back reveal" style="text-align:center; margin-top:2rem;">
+            <a asp-page="/Community" class="btn btn-secondary">Explore Community Instead</a>
         </div>
 
     </div>

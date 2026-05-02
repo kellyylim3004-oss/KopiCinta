@@ -3,15 +3,14 @@
 @{
     ViewData["Title"] = "Dictionary";
 }
+
 <section class="section">
     <div class="container">
 
         <div class="section-head">
             <p class="eyebrow">Sign Center</p>
             <h2>Choose a topic to start learning</h2>
-            <p>
-                Explore sign language through simple topic books. Click a book, then flip through the pages inside.
-            </p>
+            <p>Explore sign language through simple topic books. Click a book, then flip through the pages inside.</p>
         </div>
 
         <div class="dictionary-toolbar">
@@ -19,29 +18,77 @@
         </div>
 
         <div class="book-grid" id="bookGrid">
-            <button type="button" class="book-card" data-book="greeting" data-title="Greeting">
-                <div class="book-cover red">
-                    <span class="book-label">Topic Book</span>
-                    <h3>Greeting</h3>
-                    <div class="book-mini-lines"></div>
+
+            <button type="button" class="book-card" data-title="Abjad A-Z" onclick="openBook('abjad')">
+                <div class="book-cover image-cover">
+                    <img src="~/images/Final Dethod Buku-02.jpg">
+                </div>
+                <div class="book-card-info">
+                    <h3>Abjad A-Z</h3>
+                    <p>Learn the basic alphabet signs from A to Z.</p>
                 </div>
             </button>
 
-            <button type="button" class="book-card" data-book="daily" data-title="Daily">
-                <div class="book-cover cream">
-                    <span class="book-label">Topic Book</span>
-                    <h3>Daily</h3>
-                    <div class="book-mini-lines"></div>
+            <button type="button" class="book-card" data-title="Kopi Cinta" onclick="openBook('kopi')">
+                <div class="book-cover image-cover">
+                    <img src="~/images/Final Dethod Buku-05.jpg">
+                </div>
+                <div class="book-card-info">
+                    <h3>Kopi Cinta</h3>
+                    <p>Learn drink-related sign language.</p>
                 </div>
             </button>
 
-            <button type="button" class="book-card" data-book="feelings" data-title="Feelings">
-                <div class="book-cover white">
-                    <span class="book-label">Topic Book</span>
-                    <h3>Feelings</h3>
-                    <div class="book-mini-lines"></div>
+            <button type="button" class="book-card" data-title="Pertanyaan" onclick="openBook('tanya')">
+                <div class="book-cover image-cover">
+                    <img src="~/images/Final Dethod Buku-10.jpg">
+                </div>
+                <div class="book-card-info">
+                    <h3>Pertanyaan</h3>
+                    <p>Learn question-related sign language.</p>
                 </div>
             </button>
+
+            <button type="button" class="book-card" data-title="Profesi" onclick="openBook('profesi')">
+                <div class="book-cover image-cover">
+                    <img src="~/images/Final Dethod Buku-17.jpg">
+                </div>
+                <div class="book-card-info">
+                    <h3>Profesi</h3>
+                    <p>Learn profession-related sign language.</p>
+                </div>
+            </button>
+
+            <button type="button" class="book-card" data-title="Keluarga" onclick="openBook('keluarga')">
+                <div class="book-cover image-cover">
+                    <img src="~/images/Final Dethod Buku-22.jpg">
+                </div>
+                <div class="book-card-info">
+                    <h3>Keluarga</h3>
+                    <p>Learn family-related sign language.</p>
+                </div>
+            </button>
+
+            <button type="button" class="book-card" data-title="Transportasi" onclick="openBook('transportasi')">
+                <div class="book-cover image-cover">
+                    <img src="~/images/Final Dethod Buku-29.jpg">
+                </div>
+                <div class="book-card-info">
+                    <h3>Transportasi</h3>
+                    <p>Learn transportation-related sign language.</p>
+                </div>
+            </button>
+
+            <button type="button" class="book-card" data-title="Pakaian" onclick="openBook('pakaian')">
+                <div class="book-cover image-cover">
+                    <img src="~/images/Final Dethod Buku-35.jpg">
+                </div>
+                <div class="book-card-info">
+                    <h3>Pakaian</h3>
+                    <p>Learn clothing-related sign language.</p>
+                </div>
+            </button>
+
         </div>
 
     </div>
@@ -51,14 +98,411 @@
     <div class="book-modal">
         <div class="book-viewer-top">
             <button type="button" class="viewer-back-btn" id="viewerBackBtn">← Back to Topics</button>
-            <div class="viewer-topic" id="viewerTopic">Topic</div>
-           
+            <div class="viewer-topic" id="viewerTopic">Dictionary</div>
         </div>
 
         <div class="flipbook-wrap">
             <div id="flipBook" class="flip-book"></div>
         </div>
 
-        <p class="swipe-hint">Swipe or drag the page corners</p>
+        <div class="mobile-book-controls">
+            <button type="button" onclick="prevBookPage()">← Previous</button>
+            <button type="button" onclick="nextBookPage()">Next →</button>
+        </div>
+
+        <p class="swipe-hint">Drag the page corners to flip</p>
     </div>
 </div>
+
+<style>
+    .book-card-info {
+        margin-top: 16px;
+        text-align: center;
+    }
+
+        .book-card-info h3 {
+            margin: 0 0 6px;
+            color: var(--red);
+        }
+
+        .book-card-info p {
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #5f4b45;
+        }
+
+    .book-cover.image-cover {
+        padding: 0;
+        overflow: hidden;
+        background: #fff;
+    }
+
+        .book-cover.image-cover::before,
+        .book-cover.image-cover::after {
+            display: none !important;
+        }
+
+        .book-cover.image-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: inherit;
+        }
+
+    .image-page {
+        padding: 0 !important;
+        background: #fff !important;
+        overflow: hidden;
+    }
+
+        .image-page::before,
+        .image-page::after {
+            display: none !important;
+        }
+
+        .image-page img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+    .book-viewer {
+        position: fixed !important;
+        inset: 0 !important;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999999 !important;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .book-viewer.hidden {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+    }
+
+    .book-modal {
+        background: linear-gradient(180deg, #fffaf6 0%, #fff 100%);
+        border-radius: 28px;
+        padding: 1.8rem; /* 🔥 more breathing space */
+        border: 1px solid rgba(159, 29, 32, 0.10);
+        box-shadow: 0 28px 60px rgba(20, 10, 10, 0.18);
+        max-width: 95vw;
+        max-height: 95vh;
+        overflow: visible; /* 🔥 KEY FIX */
+    }
+
+    body.book-open {
+        overflow: hidden !important;
+    }
+
+        body.book-open .site-header,
+        body.book-open header,
+        body.book-open nav,
+        body.book-open footer,
+        body.book-open .site-footer {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+        }
+
+    .mobile-book-controls {
+        display: none;
+    }
+
+    @@media (max-width: 600px) {
+        .flip-book {
+            width: 300px !important;
+            height: 300px !important;
+        }
+
+        .mobile-book-controls {
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+            .mobile-book-controls button {
+                border: none;
+                background: var(--red);
+                color: white;
+                padding: 0.7rem 1rem;
+                border-radius: 999px;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+        .swipe-hint {
+            display: none;
+        }
+    }
+</style>
+
+<script>
+    const books = {
+        abjad: {
+            title: "Abjad A-Z",
+            pages: [
+                "/images/Final Dethod Buku-02.jpg",
+                "/images/Final Dethod Buku-03.jpg",
+                "/images/Final Dethod Buku-04.jpg"
+            ]
+        },
+
+        kopi: {
+            title: "Kopi Cinta",
+            pages: [
+                "/images/Final Dethod Buku-05.jpg",
+                "/images/Final Dethod Buku-06.jpg",
+                "/images/Final Dethod Buku-07.jpg",
+                "/images/Final Dethod Buku-08.jpg",
+                "/images/Final Dethod Buku-09.jpg"
+            ]
+        },
+
+        tanya: {
+            title: "Pertanyaan",
+            pages: [
+                "/images/Final Dethod Buku-10.jpg",
+                "/images/Final Dethod Buku-11.jpg",
+                "/images/Final Dethod Buku-12.jpg",
+                "/images/Final Dethod Buku-13.jpg",
+                "/images/Final Dethod Buku-14.jpg",
+                "/images/Final Dethod Buku-15.jpg"
+            ]
+        },
+
+        profesi: {
+            title: "Profesi",
+            pages: [
+                "/images/Final Dethod Buku-17.jpg",
+                "/images/Final Dethod Buku-18.jpg",
+                "/images/Final Dethod Buku-19.jpg",
+                "/images/Final Dethod Buku-20.jpg",
+                "/images/Final Dethod Buku-21.jpg"
+            ]
+        },
+
+        keluarga: {
+            title: "Keluarga",
+            pages: [
+                "/images/Final Dethod Buku-22.jpg",
+                "/images/Final Dethod Buku-23.jpg",
+                "/images/Final Dethod Buku-24.jpg",
+                "/images/Final Dethod Buku-25.jpg",
+                "/images/Final Dethod Buku-26.jpg",
+                "/images/Final Dethod Buku-27.jpg",
+                "/images/Final Dethod Buku-28.jpg"
+            ]
+        },
+
+        transportasi: {
+            title: "Transportasi",
+            pages: [
+                "/images/Final Dethod Buku-29.jpg",
+                "/images/Final Dethod Buku-30.jpg",
+                "/images/Final Dethod Buku-31.jpg",
+                "/images/Final Dethod Buku-32.jpg",
+                "/images/Final Dethod Buku-33.jpg",
+                "/images/Final Dethod Buku-34.jpg"
+            ]
+        },
+
+        pakaian: {
+            title: "Pakaian",
+            pages: [
+                "/images/Final Dethod Buku-35.jpg",
+                "/images/Final Dethod Buku-36.jpg",
+                "/images/Final Dethod Buku-37.jpg",
+                "/images/Final Dethod Buku-38.jpg",
+                "/images/Final Dethod Buku-39.jpg",
+                "/images/Final Dethod Buku-40.jpg"
+            ]
+        }
+    };
+
+    let flipBookInstance = null;
+
+    function destroyBook() {
+        if (flipBookInstance) {
+            try {
+                flipBookInstance.destroy();
+            } catch (e) {
+                console.warn("Destroy warning:", e);
+            }
+
+            flipBookInstance = null;
+        }
+    }
+
+    function resetBookContainer() {
+        const wrap = document.querySelector(".flipbook-wrap");
+
+        if (!wrap) return null;
+
+        wrap.innerHTML = '<div id="flipBook" class="flip-book"></div>';
+
+        return document.getElementById("flipBook");
+    }
+
+    function hideLayoutChrome() {
+        const selectors = [
+            ".site-header",
+            ".site-footer",
+            "header",
+            "footer",
+            "nav"
+        ];
+
+        selectors.forEach((selector) => {
+            document.querySelectorAll(selector).forEach((el) => {
+                el.dataset.beforeBookDisplay = el.style.display || "";
+                el.style.display = "none";
+            });
+        });
+    }
+
+    function showLayoutChrome() {
+        const selectors = [
+            ".site-header",
+            ".site-footer",
+            "header",
+            "footer",
+            "nav"
+        ];
+
+        selectors.forEach((selector) => {
+            document.querySelectorAll(selector).forEach((el) => {
+                el.style.display = el.dataset.beforeBookDisplay || "";
+                delete el.dataset.beforeBookDisplay;
+            });
+        });
+    }
+
+    function openBook(type) {
+        const viewer = document.getElementById("bookViewer");
+        const topic = document.getElementById("viewerTopic");
+
+        if (!viewer || !books[type]) return;
+
+        destroyBook();
+
+        const flipBook = resetBookContainer();
+        if (!flipBook) return;
+
+        topic.textContent = books[type].title;
+
+        books[type].pages.forEach((imgSrc) => {
+            const page = document.createElement("div");
+            page.className = "flip-page image-page";
+            page.innerHTML = `<img src="${imgSrc}" draggable="false">`;
+            flipBook.appendChild(page);
+        });
+
+        viewer.classList.remove("hidden");
+        viewer.setAttribute("aria-hidden", "false");
+
+        document.body.classList.add("book-open");
+        hideLayoutChrome();
+
+        const isMobile = window.innerWidth <= 600;
+
+        setTimeout(() => {
+            flipBookInstance = new St.PageFlip(flipBook, {
+                width: isMobile ? 300 : 520,
+                height: isMobile ? 300 : 520,
+                size: "fixed",
+                usePortrait: isMobile,
+                showCover: true,
+                mobileScrollSupport: false,
+                useMouseEvents: true,
+                swipeDistance: 30,
+                flippingTime: 700,
+                maxShadowOpacity: 0.35,
+                autoSize: false
+            });
+
+            flipBookInstance.loadFromHTML(
+                flipBook.querySelectorAll(".flip-page")
+            );
+        }, 100);
+    }
+
+    function closeBook() {
+        const viewer = document.getElementById("bookViewer");
+
+        if (!viewer) return;
+
+        viewer.classList.add("hidden");
+
+        // 🔥 DELAY cleanup so overlay fully releases click
+        setTimeout(() => {
+            document.body.classList.remove("book-open");
+            showLayoutChrome();
+
+            destroyBook();
+            resetBookContainer();
+        }, 200);
+    }
+
+    function nextBookPage() {
+        if (flipBookInstance) {
+            flipBookInstance.flipNext();
+        }
+    }
+
+    function prevBookPage() {
+        if (flipBookInstance) {
+            flipBookInstance.flipPrev();
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const searchInput = document.getElementById("bookSearchInput");
+        const bookCards = document.querySelectorAll(".book-card[data-title]");
+        const viewer = document.getElementById("bookViewer");
+        const backBtn = document.getElementById("viewerBackBtn");
+
+        if (searchInput) {
+            searchInput.addEventListener("input", () => {
+                const term = searchInput.value.trim().toLowerCase();
+
+                bookCards.forEach(card => {
+                    const title = card.dataset.title.toLowerCase();
+                    const text = card.innerText.toLowerCase();
+
+                    card.classList.toggle("is-hidden", !(title.includes(term) || text.includes(term)));
+                });
+            });
+        }
+
+        if (backBtn) {
+            backBtn.addEventListener("click", closeBook);
+        }
+
+        if (viewer) {
+            viewer.addEventListener("click", (e) => {
+                if (e.target === viewer) {
+                    closeBook();
+                }
+            });
+        }
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeBook();
+            if (e.key === "ArrowRight") nextBookPage();
+            if (e.key === "ArrowLeft") prevBookPage();
+        });
+    });
+</script>

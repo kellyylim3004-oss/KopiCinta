@@ -1081,7 +1081,9 @@ a {
 }
 
     .book-viewer.hidden {
-        display: none;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
     }
 
 .book-modal {
@@ -2853,4 +2855,303 @@ a {
         max-width: 420px;
         margin: 0 auto;
     }
+}
+/* =========================
+   ABOUT PAGE VISUAL SECTIONS
+========================= */
+
+.about-quote {
+    margin-top: 1.5rem;
+    padding: 1.4rem;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(180deg, #fff 0%, var(--cream-deep) 100%);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-soft);
+    color: var(--red);
+    font-weight: 800;
+    font-size: 1.15rem;
+    line-height: 1.45;
+}
+
+.about-timeline {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1.2rem;
+}
+
+.about-step {
+    display: grid;
+    grid-template-columns: 76px 1fr;
+    gap: 1.2rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-soft);
+}
+
+.about-step-number {
+    width: 58px;
+    height: 58px;
+    border-radius: 999px;
+    background: var(--red);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.about-step h3 {
+    margin: 0 0 0.5rem;
+}
+
+.about-step p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.about-values {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.about-value-card {
+    padding: 1.6rem;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(180deg, #fff 0%, #fff8f0 100%);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-soft);
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+    .about-value-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow);
+    }
+
+    .about-value-card span {
+        width: 58px;
+        height: 58px;
+        margin: 0 auto 1rem;
+        border-radius: 999px;
+        background: var(--cream);
+        color: var(--red);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7rem;
+    }
+
+    .about-value-card h3 {
+        margin: 0 0 0.6rem;
+    }
+
+    .about-value-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+    }
+
+.about-ending {
+    margin-top: 4.5rem;
+    padding: 3rem 2rem;
+    border-radius: var(--radius-xl);
+    background: linear-gradient(180deg, var(--red) 0%, var(--red-dark) 100%);
+    color: var(--white);
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+    .about-ending .eyebrow {
+        color: var(--cream-deep);
+    }
+
+    .about-ending h2 {
+        color: var(--white);
+        margin-bottom: 1rem;
+    }
+
+    .about-ending p {
+        max-width: 760px;
+        margin: 0 auto 1rem;
+        line-height: 1.8;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+.about-signoff {
+    margin-top: 1.5rem !important;
+    font-weight: 800;
+}
+
+@media (max-width: 900px) {
+    .about-values {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-step {
+        grid-template-columns: 1fr;
+    }
+
+    .about-ending {
+        padding: 2.2rem 1.4rem;
+    }
+}
+/* =========================
+   KBI VIDEO BLOCK
+========================= */
+
+.kbi-hero-video {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: var(--shadow-soft);
+}
+
+    .kbi-hero-video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+.book-card {
+    cursor: pointer;
+}
+
+.book-card-info {
+    margin-top: 16px;
+    text-align: center;
+}
+
+    .book-card-info h3 {
+        margin: 0 0 6px;
+        color: var(--kc-red);
+    }
+
+    .book-card-info p {
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: #5f4b45;
+    }
+.book-cover.image-cover {
+    padding: 0 !important;
+    background: #fff !important;
+}
+
+    .book-cover.image-cover::before,
+    .book-cover.image-cover::after {
+        display: none !important;
+    }
+
+    .book-cover.image-cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+    }
+
+.image-flip-page {
+    padding: 0 !important;
+    background: #fff !important;
+}
+
+    .image-flip-page::before,
+    .image-flip-page::after {
+        display: none !important;
+    }
+
+.flip-page-image-content {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+    .flip-page-image-content img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+.image-flip-page {
+    padding: 0 !important;
+    background: #fff !important;
+}
+
+    .image-flip-page::before,
+    .image-flip-page::after {
+        display: none !important;
+    }
+
+.flip-page-image-content {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+    .flip-page-image-content img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+.flip-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+.flip-page-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.flip-img {
+    display: block !important;
+    width: 100% !important;
+    height: 240px !important;
+    object-fit: contain !important;
+    margin-bottom: 14px !important;
+    position: relative !important;
+    z-index: 999 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+/* FIX DROPDOWN NOT CLICKABLE */
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-panel {
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    z-index: 999999 !important; /* 🔥 bring above everything */
+
+    pointer-events: auto;
+}
+
+/* CRITICAL: allow dropdown to overflow */
+.nav-wrap,
+.site-header,
+.site-nav {
+    overflow: visible !important;
+}
+.site-header {
+    z-index: 1000;
+    position: relative;
+}
+.dropdown-panel {
+    z-index: 99999 !important;
 }

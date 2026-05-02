@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\game\\index.html",
+      "PackagePath": "staticwebassets\\game\\index.html"
+    },
+    {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\BlessingsKomunitas\\blessings-komunitas-hero.jpg",
       "PackagePath": "staticwebassets\\images\\BlessingsKomunitas\\blessings-komunitas-hero.jpg"
     },
@@ -155,6 +159,162 @@
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\CoffeeBlessings\\coffee-pause-3.jpg",
       "PackagePath": "staticwebassets\\images\\CoffeeBlessings\\coffee-pause-3.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-02.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-02.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-03.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-03.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-04.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-04.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-05.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-05.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-06.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-06.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-07.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-07.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-08.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-08.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-09.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-09.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-10.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-10.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-11.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-11.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-12.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-12.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-13.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-13.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-14.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-14.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-15.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-15.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-16.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-16.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-17.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-17.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-18.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-18.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-19.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-19.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-20.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-20.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-21.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-21.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-22.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-22.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-23.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-23.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-24.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-24.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-25.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-25.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-26.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-26.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-27.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-27.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-28.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-28.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-29.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-29.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-30.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-30.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-31.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-31.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-32.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-32.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-33.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-33.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-34.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-34.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-35.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-35.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-36.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-36.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-37.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-37.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-38.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-38.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-39.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-39.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\Final Dethod Buku-40.jpg",
+      "PackagePath": "staticwebassets\\images\\Final Dethod Buku-40.jpg"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\FOTO KOPCIN-11.jpg",
@@ -373,8 +533,288 @@
       "PackagePath": "staticwebassets\\images\\LetsSignItCorner\\lsi-learn-3.jpg"
     },
     {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\apa-arti-cinta\\IMG-20260429-WA0007.jpg",
+      "PackagePath": "staticwebassets\\images\\apa-arti-cinta\\IMG-20260429-WA0007.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\apa-arti-cinta\\IMG-20260429-WA0018.jpg",
+      "PackagePath": "staticwebassets\\images\\apa-arti-cinta\\IMG-20260429-WA0018.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\apa-arti-cinta\\IMG-20260429-WA0022.jpg",
+      "PackagePath": "staticwebassets\\images\\apa-arti-cinta\\IMG-20260429-WA0022.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\apa-arti-cinta\\IMG-20260429-WA0024.jpg",
+      "PackagePath": "staticwebassets\\images\\apa-arti-cinta\\IMG-20260429-WA0024.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\apa-arti-cinta\\IMG-20260429-WA0026.jpg",
+      "PackagePath": "staticwebassets\\images\\apa-arti-cinta\\IMG-20260429-WA0026.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\DSC04935.JPG",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\DSC04935.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\act-2.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\act-2.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-10.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-10.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-11.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-11.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-12.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-12.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-13.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-13.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-14.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-14.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-15.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-15.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-16.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-16.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-17.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-17.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-18.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-18.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-19.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-19.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-2.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-2.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-20.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-20.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-21.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-21.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-22.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-22.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-23.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-23.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-3.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-3.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-4.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-4.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-5.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-5.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-6.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-6.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-7.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-7.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-8.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-8.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark-9.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark-9.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\bookmark.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\bookmark.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\foto harmoni-10.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\foto harmoni-10.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\foto harmoni-11.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\foto harmoni-11.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\foto harmoni-12.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\foto harmoni-12.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\foto harmoni-13.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\foto harmoni-13.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\foto harmoni-14.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\foto harmoni-14.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\foto harmoni-15.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\foto harmoni-15.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\foto harmoni-16.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\foto harmoni-16.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\foto harmoni-17.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\foto harmoni-17.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\foto harmoni-8.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\foto harmoni-8.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\bookmark-special\\foto harmoni-9.jpg",
+      "PackagePath": "staticwebassets\\images\\bookmark-special\\foto harmoni-9.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\charis\\Hallo semua\uD83D\uDC4B\uD83D\uDC4B Salam kenal, kami dari kopi CINTA❤️Mulai hari ini dan seterusnya kami berkomitm.webp",
+      "PackagePath": "staticwebassets\\images\\charis\\Hallo semua\uD83D\uDC4B\uD83D\uDC4B Salam kenal, kami dari kopi CINTA❤️Mulai hari ini dan seterusnya kami berkomitm.webp"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\charis\\IMG-20240717-WA0007.jpg",
+      "PackagePath": "staticwebassets\\images\\charis\\IMG-20240717-WA0007.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\charis\\IMG-20240717-WA0011.jpg",
+      "PackagePath": "staticwebassets\\images\\charis\\IMG-20240717-WA0011.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\charis\\IMG-20240717-WA0021.jpg",
+      "PackagePath": "staticwebassets\\images\\charis\\IMG-20240717-WA0021.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\DSCF2904.JPG",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\DSCF2904.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\DSCF2908.JPG",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\DSCF2908.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\DSCF4294.JPG",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\DSCF4294.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\DSCF4301.JPG",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\DSCF4301.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\DSCF4302.JPG",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\DSCF4302.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\DSCF4670.JPG",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\DSCF4670.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\coffe experience-15.jpg",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\coffe experience-15.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\coffe experience-16.jpg",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\coffe experience-16.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\coffe experience-18.jpg",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\coffe experience-18.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\coffe experience-20.jpg",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\coffe experience-20.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\coffe experience-24.jpg",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\coffe experience-24.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\coffe experience-26.jpg",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\coffe experience-26.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\coffe experience-27.jpg",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\coffe experience-27.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\coffe experience-28.jpg",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\coffe experience-28.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\coffe experience-40.jpg",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\coffe experience-40.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\coffee-experience\\coffe experience-43.jpg",
+      "PackagePath": "staticwebassets\\images\\coffee-experience\\coffe experience-43.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\11.jpg",
+      "PackagePath": "staticwebassets\\images\\dropdown\\11.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\Cover Depan.jpg",
+      "PackagePath": "staticwebassets\\images\\dropdown\\Cover Depan.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\FOTO KOPCIN-54.jpg",
+      "PackagePath": "staticwebassets\\images\\dropdown\\FOTO KOPCIN-54.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\Screenshot 2026-05-03 030332.png",
+      "PackagePath": "staticwebassets\\images\\dropdown\\Screenshot 2026-05-03 030332.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\binus-5.JPG",
+      "PackagePath": "staticwebassets\\images\\dropdown\\binus-5.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\coffee blessings-2 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\dropdown\\coffee blessings-2 (1).jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\hero-2.JPG",
+      "PackagePath": "staticwebassets\\images\\dropdown\\hero-2.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\hero-3.JPG",
+      "PackagePath": "staticwebassets\\images\\dropdown\\hero-3.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\hulu-hilir5.jpg",
+      "PackagePath": "staticwebassets\\images\\dropdown\\hulu-hilir5.jpg"
+    },
+    {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\workshops-dropdown.jpg",
       "PackagePath": "staticwebassets\\images\\dropdown\\workshops-dropdown.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\hbii-hdi\\cover.png",
+      "PackagePath": "staticwebassets\\images\\hbii-hdi\\cover.png"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\logo-kopi-cinta.png",
@@ -633,6 +1073,26 @@
       "PackagePath": "staticwebassets\\images\\roti-arum\\9.JPG"
     },
     {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\roti-cinta\\DSC08291.JPG",
+      "PackagePath": "staticwebassets\\images\\roti-cinta\\DSC08291.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\roti-cinta\\DSC08292.JPG",
+      "PackagePath": "staticwebassets\\images\\roti-cinta\\DSC08292.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\roti-cinta\\DSC08319.JPG",
+      "PackagePath": "staticwebassets\\images\\roti-cinta\\DSC08319.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\roti-cinta\\DSC08321.JPG",
+      "PackagePath": "staticwebassets\\images\\roti-cinta\\DSC08321.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\roti-cinta\\DSC08325.JPG",
+      "PackagePath": "staticwebassets\\images\\roti-cinta\\DSC08325.JPG"
+    },
+    {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\take-one\\take-hero.jpg",
       "PackagePath": "staticwebassets\\images\\take-one\\take-hero.jpg"
     },
@@ -659,6 +1119,10 @@
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\team\\ardisa.jpg",
       "PackagePath": "staticwebassets\\images\\team\\ardisa.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\team\\audrey.jpg",
+      "PackagePath": "staticwebassets\\images\\team\\audrey.jpg"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\team\\axel.jpg",
@@ -1025,6 +1489,26 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\apa-arti-cinta\\VID-20260429-WA0021.mp4",
+      "PackagePath": "staticwebassets\\videos\\apa-arti-cinta\\VID-20260429-WA0021.mp4"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\apa-arti-cinta\\VID-20260429-WA0023.mp4",
+      "PackagePath": "staticwebassets\\videos\\apa-arti-cinta\\VID-20260429-WA0023.mp4"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\apa-arti-cinta\\VID-20260429-WA0025.mp4",
+      "PackagePath": "staticwebassets\\videos\\apa-arti-cinta\\VID-20260429-WA0025.mp4"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\apa-arti-cinta\\VID-20260429-WA0027.mp4",
+      "PackagePath": "staticwebassets\\videos\\apa-arti-cinta\\VID-20260429-WA0027.mp4"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\apa-arti-cinta\\VID-20260429-WA0028.mp4",
+      "PackagePath": "staticwebassets\\videos\\apa-arti-cinta\\VID-20260429-WA0028.mp4"
+    },
+    {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\hbii-hdi\\hbii-2025-stop-motion.mp4",
       "PackagePath": "staticwebassets\\videos\\hbii-hdi\\hbii-2025-stop-motion.mp4"
     },
@@ -1043,10 +1527,6 @@
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\tulitalks\\selamat-ulang-tahun.mp4",
       "PackagePath": "staticwebassets\\videos\\tulitalks\\selamat-ulang-tahun.mp4"
-    },
-    {
-      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\tulitalks\\sibi-dan-bisindo.mp4",
-      "PackagePath": "staticwebassets\\videos\\tulitalks\\sibi-dan-bisindo.mp4"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\tulitalks\\social-media.mp4",

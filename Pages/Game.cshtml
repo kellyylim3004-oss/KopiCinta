@@ -1,37 +1,50 @@
 ﻿@page
 @model KopiCinta.Pages.GameModel
 @{
-    ViewData["Title"] = "Game";
+    ViewData["Title"] = "Kopi Cinta Runner";
 }
+
 <section class="section">
     <div class="container">
+
         <div class="section-head">
-            <p class="eyebrow">Game</p>
-            <h2>Learn through play.</h2>
+            <p class="eyebrow">Interactive Game</p>
+            <h2>Kopi Cinta Runner</h2>
             <p>
-                This section introduces the interactive learning game and can later link directly to your playable game.
+                A simple web-based runner game inspired by Kopi Cinta’s playful spirit,
+                where users move, collect hearts, and avoid coffee cup obstacles.
             </p>
         </div>
 
         <div class="hero-grid">
             <div class="hero-copy">
-                <span class="pill">Interactive Learning</span>
-                <h3 style="margin-top: 16px;">Sign Runner / Learning Game</h3>
+                <span class="pill">Play & Explore</span>
+
+                <h3 style="margin-top: 16px;">Run, collect hearts, and avoid obstacles.</h3>
+
                 <p class="hero-text">
-                    A playful learning activity where users engage with sign-related prompts, collect the right answers, and build familiarity through repeated interaction.
+                    Kopi Cinta Runner is a light interactive experience created to make the
+                    website more engaging. Players control the character by moving left and
+                    right, collecting heart points while avoiding coffee obstacles along the way.
+                </p>
+
+                <p class="hero-text">
+                    The game can be played using keyboard controls on desktop or drag controls
+                    on mobile, making it easy for visitors to try directly from the website.
                 </p>
 
                 <div class="hero-actions">
-                    <a class="btn btn-primary" href="/games/signrunner/index.html">Launch Game</a>
+                    <a class="btn btn-primary" href="/game/index.html">Launch Game</a>
                 </div>
             </div>
 
             <div class="hero-card">
-                <h3>Game Preview</h3>
-                <p>
-                    A basic front-end preview area for your game feature. This can later be replaced with your real embedded game or direct launch screen.
-                </p>
+                <h3>How to Play</h3>
+                <p><strong>Desktop:</strong> Use the left and right arrow keys to move.</p>
+                <p><strong>Mobile:</strong> Drag left or right to control the player.</p>
+                <p><strong>Goal:</strong> Collect as many hearts as possible and avoid the coffee cups.</p>
             </div>
         </div>
+
     </div>
 </section>

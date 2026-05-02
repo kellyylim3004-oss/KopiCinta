@@ -6,50 +6,125 @@
 
 <section class="hero section">
     <div class="container hero-grid">
-        <div class="hero-copy">
-            <p class="eyebrow">Selamanya berbagi CINTA</p>
-            <h1>Shared stories, shared language, shared understanding.</h1>
+        <div class="hero-copy reveal">
+            <p class="eyebrow">Selamanya Berbagi CINTA</p>
+            <h1>More than coffee, a space for connection.</h1>
             <p class="hero-text">
-                Kopi Cinta is a warm digital space where Deaf awareness, sign language learning, community experiences, and meaningful collaboration come together in a way that feels welcoming, engaging, and alive.
+                Kopi Cinta brings Deaf awareness, sign language learning, community stories,
+                and meaningful collaborations together through coffee, warmth, and shared experiences.
             </p>
 
             <div class="hero-actions">
-                <a class="btn btn-primary" asp-page="/Dictionary">Explore Sign Center</a>
-                <a class="btn btn-secondary" asp-page="/Stories">Read Our Stories</a>
+                <a class="btn btn-primary" asp-page="/About">Discover Our Story</a>
+                <a class="btn btn-secondary" asp-page="/Dictionary">Explore Sign Center</a>
             </div>
 
             <div class="hero-stats">
                 <article class="reveal">
-                    <strong>Programs</strong>
-                    <span>Workshops, events, and shared experiences</span>
+                    <strong>Learn</strong>
+                    <span>Sign language and Deaf awareness</span>
                 </article>
                 <article class="reveal">
-                    <strong>Awareness</strong>
-                    <span>Accessible stories and Deaf-centered learning</span>
+                    <strong>Connect</strong>
+                    <span>Stories, workshops, and communities</span>
                 </article>
                 <article class="reveal">
-                    <strong>Community</strong>
-                    <span>Partnerships, collaboration, and connection</span>
+                    <strong>Share</strong>
+                    <span>Coffee, kindness, and CINTA</span>
                 </article>
             </div>
         </div>
 
-        <div class="hero-visual">
-            <div class="bubble bubble-1">Community</div>
-            <div class="bubble bubble-2">Sign Center</div>
-            <div class="bubble bubble-3">Campaigns</div>
-            <div class="bubble bubble-4">Stories</div>
+        <div class="hero-visual reveal">
+            <img src="/images/home/FOTO%20KOPCIN-2.jpg" alt="Kopi Cinta coffee experience" style="width:100%; height:520px; object-fit:cover; border-radius:28px; box-shadow:0 18px 45px rgba(0,0,0,.14);">
 
-            <div class="hero-card hero-brand-card">
-                <img src="~/images/logo-kopi-cinta.png"
-                     alt="Kopi Cinta Logo"
-                     class="site-logo"
-                     style="height:22px; max-height:22px; width:auto; max-width:20px; display:block;" />
-                     <span class="pill">Featured Campaign</span>
-                <h3>Cinta Bahasa Isyarat</h3>
+            <div class="bubble bubble-1">Coffee</div>
+            <div class="bubble bubble-2">Sign</div>
+            <div class="bubble bubble-3">Stories</div>
+            <div class="bubble bubble-4">CINTA</div>
+        </div>
+    </div>
+</section>
+
+<section class="section intro-band">
+    <div class="container">
+        <div class="section-head reveal">
+            <p class="eyebrow">What We Do</p>
+            <h2>Small moments, bigger meaning.</h2>
+            <p>
+                Through coffee, sign language, and community experiences, Kopi Cinta creates
+                simple but meaningful ways for Deaf and hearing people to meet, learn, and connect.
+            </p>
+        </div>
+
+        <div class="intro-grid">
+            <article class="intro-card reveal">
+                <span>01</span>
+                <h3>Workshops & Learning</h3>
                 <p>
-                    A meaningful campaign that celebrates sign language, shared understanding, and the importance of building a more inclusive world together.
+                    Learn sign language and Deaf awareness through warm, beginner-friendly experiences.
                 </p>
+                <a asp-page="/Workshops" class="text-link">Explore workshops →</a>
+            </article>
+
+            <article class="intro-card reveal">
+                <span>02</span>
+                <h3>Community & Outreach</h3>
+                <p>
+                    Discover initiatives built around kindness, access, and meaningful social impact.
+                </p>
+                <a asp-page="/Community" class="text-link">See outreach →</a>
+            </article>
+
+            <article class="intro-card reveal">
+                <span>03</span>
+                <h3>Collaborations & Campaigns</h3>
+                <p>
+                    Explore partnerships, campaigns, and shared projects that spread CINTA further.
+                </p>
+                <a asp-page="/Collaborations" class="text-link">View collaborations →</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="kbi-section reveal">
+            <div class="kbi-hero-image">
+                <img src="/images/home/FOTO%20KOPCIN-23.jpg" alt="Coffee being poured">
+            </div>
+
+            <div class="kbi-text">
+                <p class="eyebrow">Coffee Experience</p>
+                <h3>A cup can become a bridge.</h3>
+                <p>
+                    At Kopi Cinta, coffee is not only served for taste. It becomes a way to start conversations,
+                    create comfort, and introduce people to a more inclusive way of connecting.
+                </p>
+                <p>
+                    From live coffee experiences to Deaf-led interactions, every small detail carries a story.
+                </p>
+                <a asp-page="/Workshops" class="text-link">See coffee experiences →</a>
+            </div>
+        </div>
+
+        <div class="kbi-section reverse reveal">
+            <div class="kbi-hero-image">
+                <img src="/images/home/FOTO%20KOPCIN-40.jpg" alt="Kopi Cinta team with coffee">
+            </div>
+
+            <div class="kbi-text">
+                <p class="eyebrow">Our Story</p>
+                <h3>Built from access, not charity.</h3>
+                <p>
+                    Kopi Cinta began from a simple belief: people with disabilities do not have different dreams,
+                    they just do not always receive the same access.
+                </p>
+                <p>
+                    That belief continues to guide every workshop, campaign, story, and cup we share.
+                </p>
+                <a asp-page="/About" class="text-link">Read about us →</a>
             </div>
         </div>
     </div>
@@ -57,80 +132,48 @@
 
 <section class="section intro-band">
     <div class="container">
-        <div class="section-head">
-            <p class="eyebrow">What You Can Explore</p>
-            <h2>A home for learning, stories, and shared action.</h2>
-            <p>
-                Inspired by the client’s preferred direction, this homepage balances playful interaction, warm storytelling, and clean structure so the website feels fresh, engaging, and still polished.
-            </p>
+        <div class="section-head reveal">
+            <p class="eyebrow">Explore Kopi Cinta</p>
+            <h2>Choose where your journey begins.</h2>
         </div>
 
-        <div class="intro-grid">
-            <article class="intro-card reveal">
-                <span>01</span>
-                <h3>Kopi Cinta Story</h3>
-                <p>
-                    Discover the story behind Kopi Cinta, the people behind it, and why this mission matters.
-                </p>
-            </article>
-
-            <article class="intro-card reveal">
-                <span>02</span>
-                <h3>Programs & Experiences</h3>
-                <p>
-                    Explore workshops, community events, campaigns, and meaningful moments that have already been created.
-                </p>
-            </article>
-
-            <article class="intro-card reveal">
-                <span>03</span>
-                <h3>Sign Center</h3>
-                <p>
-                    Learn through Deaf awareness content, sign language resources, alphabet support, and interactive games.
-                </p>
-            </article>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
         <div class="stories-layout">
             <article class="story-card large reveal">
-                <div class="story-tag">Latest Highlight</div>
-                <h3>Making Deaf awareness more accessible and engaging.</h3>
+                <div class="story-tag">Featured</div>
+                <h3>Learn sign language in a way that feels natural.</h3>
                 <p>
-                    Kopi Cinta brings people together through learning experiences, inclusive storytelling, and warm community-led initiatives that feel both meaningful and approachable.
+                    Visit the Sign Center to explore sign language topics, alphabet learning,
+                    and interactive features made to help more people communicate with confidence.
                 </p>
-                <a asp-page="/Projects" class="text-link">Explore programs →</a>
+                <a asp-page="/Dictionary" class="text-link">Go to Sign Center →</a>
             </article>
 
             <div class="story-list">
                 <article class="story-card reveal">
-                    <div class="story-tag soft">Experiences</div>
-                    <h3>Programs and workshops that create real impact</h3>
-                    <p>
-                        From sign language events to coffee experiences, each initiative is designed to connect, educate, and inspire.
-                    </p>
-                    <a asp-page="/Projects" class="text-link">View experiences</a>
-                </article>
-
-                <article class="story-card reveal">
                     <div class="story-tag soft">Stories</div>
-                    <h3>Community stories that feel personal and alive</h3>
+                    <h3>Meet the people behind Kopi Cinta</h3>
                     <p>
-                        Explore perspectives, reflections, and real experiences from the people who help shape Kopi Cinta.
+                        Read reflections from the team and discover the personal meaning behind this journey.
                     </p>
-                    <a asp-page="/Stories" class="text-link">Read stories</a>
+                    <a asp-page="/Team" class="text-link">Read more</a>
                 </article>
 
                 <article class="story-card reveal">
-                    <div class="story-tag soft">Collaborations</div>
-                    <h3>Partnerships that open more doors</h3>
+                    <div class="story-tag soft">Experiences</div>
+                    <h3>See our programs and events</h3>
                     <p>
-                        Schools, brands, communities, and coffee spaces can work together with Kopi Cinta to create wider impact.
+                        From community outreach to university booths, each experience is made to spread awareness.
                     </p>
-                    <a asp-page="/Contact" class="text-link">Collaborate with us</a>
+                    <a asp-page="/Projects" class="text-link">Explore experiences</a>
+                </article>
+
+                <article class="story-card reveal">
+                    <div class="story-tag soft">Have Fun</div>
+                    <h3>Play while learning</h3>
+                    <p>
+                        Try the interactive game and collect signs while learning in a fun, memorable way.
+                    </p>
+                    <a asp-page="/Game" class="text-link">Play game</a>
                 </article>
             </div>
         </div>
@@ -139,38 +182,10 @@
 
 <section class="section">
     <div class="container">
-        <div class="section-head">
-            <p class="eyebrow">Quick Preview</p>
-            <h2>More than a website, a growing hub.</h2>
-            <p>
-                The platform is designed to introduce the Kopi Cinta story, showcase programs and workshops, share sign language resources, highlight community stories, support collaboration, and create a fun interactive space through games.
-            </p>
-        </div>
-
-        <div class="intro-grid">
-            <article class="intro-card reveal">
-                <span>About</span>
-                <h3>Who we are</h3>
-                <p>
-                    Learn the background story, mission, values, and team behind Kopi Cinta.
-                </p>
-            </article>
-
-            <article class="intro-card reveal">
-                <span>Sign Center</span>
-                <h3>Learn with ease</h3>
-                <p>
-                    Access Deaf awareness content, sign language dictionary, alphabet support, and interactive learning features.
-                </p>
-            </article>
-
-            <article class="intro-card reveal">
-                <span>Game</span>
-                <h3>Have fun while learning</h3>
-                <p>
-                    A playful experience that helps users engage with sign language in a more memorable way.
-                </p>
-            </article>
+        <div class="featured-grid reveal">
+            <img src="/images/home/FOTO%20KOPCIN-11.jpg" alt="Kopi Cinta barista">
+            <img src="/images/home/FOTO%20KOPCIN-31.jpg" alt="Pouring coffee">
+            <img src="/images/home/FOTO%20KOPCIN-54.jpg" alt="Kopi Cinta coffee moment">
         </div>
     </div>
 </section>
@@ -179,14 +194,15 @@
     <div class="container">
         <div class="hero-card reveal" style="width:100%; max-width:none;">
             <span class="pill">Get Involved</span>
-            <h3>Ready to create more inclusive experiences together?</h3>
+            <h3>Let’s create more inclusive experiences together.</h3>
             <p>
-                Kopi Cinta welcomes collaborations with schools, communities, brands, coffee spaces, and organizations that want to support Deaf awareness and meaningful connection.
+                Kopi Cinta welcomes schools, communities, brands, coffee spaces, and organizations
+                that want to support Deaf awareness through meaningful collaboration.
             </p>
 
             <div class="hero-actions" style="margin-top:1.25rem;">
                 <a class="btn btn-primary" asp-page="/Contact">Work With Us</a>
-                <a class="btn btn-secondary" asp-page="/Projects">See Our Programs</a>
+                <a class="btn btn-secondary" asp-page="/Collaborations">See Collaborations</a>
             </div>
         </div>
     </div>

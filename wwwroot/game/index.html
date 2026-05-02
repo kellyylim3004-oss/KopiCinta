@@ -1,0 +1,782 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kopi Cinta Runner</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff6f1;
+            overflow: hidden;
+            touch-action: none;
+        }
+
+        #game-container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        canvas {
+            width: 100% !important;
+            height: 100% !important;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game-container"></div>
+
+    <script>
+        const config = {
+            type: Phaser.AUTO,
+            parent: "game-container",
+            width: window.innerWidth,
+            height: window.innerHeight,
+            backgroundColor: "#fff6f1",
+            scale: {
+                mode: Phaser.Scale.RESIZE,
+                autoCenter: Phaser.Scale.CENTER_BOTH
+            },
+            physics: {
+                default: "arcade",
+                arcade: { debug: false }
+            },
+            scene: { preload, create, update }
+        };
+
+        let playerHitbox, playerVisual;
+        let obstacles, coins, scenery, cursors;
+        let heartCount = 0;
+        let speed = 260;
+        let gameOver = false;
+        let heartText;
+        let targetX;
+        let isDragging = false;
+
+        const game = new Phaser.Game(config);
+        function preload() {
+            this.load.image("cafe", "/images/kopi-cinta-cafe.png");
+            this.load.image("hand", "/images/hand.png");
+        }
+        function create() {
+            const width = this.scale.width;
+            const height = this.scale.height;
+
+            heartCount = 0;
+            speed = 260;
+            gameOver = false;
+            isDragging = false;
+
+            obstacles = this.physics.add.group();
+            coins = this.physics.add.group();
+            scenery = this.add.group();
+
+            // 🔥 NEW BACKGROUND (PASTE HERE)
+
+            // 🌅 SKY GRADIENT
+            const sky = this.add.rectangle(width / 2, height / 2, width, height, 0xffc6a3);
+            sky.setDepth(0);
+
+            const skyTop = this.add.rectangle(width / 2, height * 0.25, width, height * 0.5, 0xffe0c7, 0.6);
+            skyTop.setDepth(0);
+
+            // ☁️ CLOUDS
+            for (let i = 0; i < 8; i++) {
+                const x = Phaser.Math.Between(0, width);
+                const y = Phaser.Math.Between(40, height * 0.35);
+
+                const cloud = this.add.ellipse(x, y, 120, 60, 0xffffff, 0.5);
+                cloud.setDepth(0);
+            }
+
+            // 🏞️ BACK HILLS
+            const hill1 = this.add.ellipse(width * 0.3, height * 0.55, width * 0.8, height * 0.4, 0xf2b38f);
+            const hill2 = this.add.ellipse(width * 0.7, height * 0.58, width * 0.9, height * 0.45, 0xf0a07c);
+
+            // 🌄 MID HILLS
+            const midHill1 = this.add.ellipse(width * 0.25, height * 0.7, width * 0.7, height * 0.35, 0xe88f6a);
+            const midHill2 = this.add.ellipse(width * 0.75, height * 0.72, width * 0.8, height * 0.4, 0xe38460);
+
+            // 🌾 GROUND
+            const ground = this.add.rectangle(width / 2, height * 0.85, width, height * 0.4, 0xdc7f58);
+
+            // 🌱 GRASS
+            for (let i = 0; i < 25; i++) {
+                const x = Phaser.Math.Between(0, width);
+                const y = Phaser.Math.Between(height * 0.75, height);
+
+                const grass = this.add.ellipse(x, y, 10, 6, 0x7fbf5b, 0.8);
+            }
+            this.roadTopWidth = width * 0.24;
+            this.roadBottomWidth = width * 0.70;
+
+            this.add.polygon(0, 0, [
+                width / 2 - this.roadTopWidth / 2, 0,
+                width / 2 + this.roadTopWidth / 2, 0,
+                width / 2 + this.roadBottomWidth / 2, height,
+                width / 2 - this.roadBottomWidth / 2, height
+            ], 0xfff3cf).setOrigin(0, 0).setDepth(1);
+
+            this.add.rectangle(width / 2, height * 0.25, width, height * 0.5, 0xfff3cf, 0.4);
+
+            this.add.line(
+                0, 0,
+                width / 2 - this.roadTopWidth / 2, 0,
+                width / 2 - this.roadBottomWidth / 2, height,
+                0xd79a82
+            ).setOrigin(0, 0).setLineWidth(5).setDepth(2);
+
+            this.add.line(
+                0, 0,
+                width / 2 + this.roadTopWidth / 2, 0,
+                width / 2 + this.roadBottomWidth / 2, height,
+                0xd79a82
+            ).setOrigin(0, 0).setLineWidth(5).setDepth(2);
+
+            this.laneLines = [];
+            for (let i = 0; i < 12; i++) {
+                const line = this.add.rectangle(width / 2, i * 100, 7, 55, 0xffffff, 0.65);
+                line.setDepth(3);
+                this.laneLines.push(line);
+            }
+
+            for (let i = 0; i < 8; i++) {
+                spawnScenery.call(this, i * 140);
+            }
+
+            playerVisual = createPlayerVisual(this, width / 2, height - 130);
+
+            playerHitbox = this.add.rectangle(width / 2, height - 105, 60, 100, 0xff0000, 0);
+            this.physics.add.existing(playerHitbox);
+            playerHitbox.body.setCollideWorldBounds(true);
+
+            targetX = playerHitbox.x;
+
+            heartText = this.add.text(20, 62, "🤟 0", {
+                fontSize: "22px",
+                color: "#c91821",
+                fontFamily: "Arial",
+                fontStyle: "bold",
+                backgroundColor: "#fff6f1",
+                padding: { x: 14, y: 8 }
+            }).setDepth(50);
+
+            this.time.addEvent({
+                delay: 900,
+                callback: spawnObstacle,
+                callbackScope: this,
+                loop: true
+            });
+
+            this.time.addEvent({
+                delay: 700,
+                callback: spawnHeart,
+                callbackScope: this,
+                loop: true
+            });
+
+            this.physics.add.overlap(playerHitbox, obstacles, hitObstacle, null, this);
+            this.physics.add.overlap(playerHitbox, coins, collectHeart, null, this);
+
+            cursors = this.input.keyboard.createCursorKeys();
+
+            this.input.on("pointerdown", (p) => {
+                if (!gameOver) {
+                    isDragging = true;
+                    targetX = p.x;
+                }
+            });
+
+            this.input.on("pointermove", (p) => {
+                if (!gameOver && isDragging) {
+                    targetX = p.x;
+                }
+            });
+
+            this.input.on("pointerup", () => {
+                isDragging = false;
+            });
+        }
+
+        function update(time, delta) {
+            if (gameOver) return;
+
+            const dt = delta / 1000;
+
+            speed += 5 * dt;
+
+            if (cursors.left.isDown) targetX -= 400 * dt;
+            if (cursors.right.isDown) targetX += 400 * dt;
+
+            const leftLimit = this.scale.width * 0.23;
+            const rightLimit = this.scale.width * 0.77;
+            targetX = Phaser.Math.Clamp(targetX, leftLimit, rightLimit);
+
+            playerHitbox.x = Phaser.Math.Linear(playerHitbox.x, targetX, 0.2);
+            playerHitbox.body.updateFromGameObject();
+
+            playerVisual.x = playerHitbox.x;
+            playerVisual.y = playerHitbox.y - 25;
+
+            this.laneLines.forEach(line => {
+                line.y += speed * dt;
+
+                if (line.y > this.scale.height + 50) {
+                    line.y = -50;
+                }
+
+                const progress = Phaser.Math.Clamp(line.y / this.scale.height, 0, 1);
+
+                line.scaleY = Phaser.Math.Linear(0.45, 1.4, progress);
+                line.scaleX = Phaser.Math.Linear(0.5, 1.2, progress);
+                line.alpha = Phaser.Math.Linear(0.35, 0.9, progress);
+            });
+
+            scenery.children.iterate((item) => {
+                if (!item) return;
+
+                item.y += speed * dt * 0.65;
+
+                const progress = Phaser.Math.Clamp(item.y / this.scale.height, 0, 1);
+                const center = this.scale.width / 2;
+
+                const roadTopHalf = this.roadTopWidth / 2;
+                const roadBottomHalf = this.roadBottomWidth / 2;
+                const roadHalf = Phaser.Math.Linear(roadTopHalf, roadBottomHalf, progress);
+
+                const roadEdge = item.side === 0
+                    ? center - roadHalf
+                    : center + roadHalf;
+
+                const offset = Phaser.Math.Linear(110, 220, progress);
+                item.x = item.side === 0
+                    ? roadEdge - offset
+                    : roadEdge + offset;
+
+                item.setScale(Phaser.Math.Linear(0.45, item.originalScale, progress));
+
+                if (item.y > this.scale.height + 160) {
+                    item.destroy();
+                }
+            });
+
+            if (scenery.countActive(true) < 8) {
+                spawnScenery.call(this, -100);
+            }
+
+            obstacles.children.iterate((obstacle) => {
+                if (!obstacle) return;
+
+                obstacle.y += speed * dt;
+
+                const progress = Phaser.Math.Clamp(obstacle.y / this.scale.height, 0, 1);
+                const scale = Phaser.Math.Linear(0.25, 1.35, progress);
+
+                const center = this.scale.width / 2;
+                const spread = Phaser.Math.Linear(0.25, 1.0, progress);
+
+                obstacle.x = center + (obstacle.baseX - center) * spread;
+                obstacle.body.updateFromGameObject();
+
+                if (obstacle.visual) {
+                    obstacle.visual.x = obstacle.x;
+                    obstacle.visual.y = obstacle.y - 15;
+                    obstacle.visual.setScale(scale);
+                }
+
+                if (obstacle.y > this.scale.height + 120) {
+                    if (obstacle.visual) obstacle.visual.destroy();
+                    obstacle.destroy();
+                }
+            });
+
+            coins.children.iterate((heart) => {
+                if (!heart) return;
+
+                heart.y += speed * dt;
+
+                const progress = Phaser.Math.Clamp(heart.y / this.scale.height, 0, 1);
+                const scale = Phaser.Math.Linear(0.25, 1.35, progress);
+
+                const center = this.scale.width / 2;
+                const spread = Phaser.Math.Linear(0.25, 1.0, progress);
+
+                heart.x = center + (heart.baseX - center) * spread;
+
+                if (heart.visual) {
+                    heart.visual.x = heart.x;
+                    heart.visual.y = heart.y;
+                    heart.visual.setScale(scale);
+                }
+
+                heart.body.updateFromGameObject();
+
+                if (heart.y > this.scale.height + 100) {
+                    if (heart.visual) heart.visual.destroy();
+                    heart.destroy();
+                }
+            });
+        }
+
+        function createPlayerVisual(scene, x, y) {
+            const player = scene.add.container(x, y);
+
+            const shadow = scene.add.ellipse(0, 76, 82, 24, 0x000000, 0.18);
+
+            const leftLeg = scene.add.rectangle(-13, 48, 13, 36, 0x1b1b1b);
+            const rightLeg = scene.add.rectangle(13, 48, 13, 36, 0x1b1b1b);
+
+            const leftShoe = scene.add.ellipse(-13, 70, 24, 13, 0xffffff).setStrokeStyle(2, 0x222222);
+            const rightShoe = scene.add.ellipse(13, 70, 24, 13, 0xffffff).setStrokeStyle(2, 0x222222);
+
+            const body = scene.add.ellipse(0, 18, 58, 68, 0xc91821).setStrokeStyle(3, 0x8f1017);
+            const bodyShade = scene.add.ellipse(12, 18, 28, 64, 0x8f1017, 0.28);
+            const bodyHighlight = scene.add.ellipse(-15, 5, 10, 44, 0xffffff, 0.18);
+
+            const leftArm = scene.add.rectangle(-34, 20, 13, 48, 0xc91821);
+            leftArm.setAngle(18);
+
+            const rightArm = scene.add.rectangle(34, 20, 13, 48, 0xc91821);
+            rightArm.setAngle(-18);
+
+            const leftHand = scene.add.circle(-39, 45, 8, 0xffc2a1);
+            const rightHand = scene.add.circle(39, 45, 8, 0xffc2a1);
+
+            const hairBack = scene.add.ellipse(0, -12, 66, 60, 0x4a2418);
+            const hairShade = scene.add.ellipse(14, -8, 28, 52, 0x2b120d, 0.35);
+            const hairHighlight = scene.add.ellipse(-16, -16, 10, 35, 0xffffff, 0.12);
+
+            const leftEar = scene.add.circle(-33, -23, 8, 0xffc2a1);
+            const rightEar = scene.add.circle(33, -23, 8, 0xffc2a1);
+
+            const capBack = scene.add.ellipse(0, -43, 68, 30, 0xd71920);
+            const capShade = scene.add.ellipse(15, -43, 30, 26, 0x8f1017, 0.35);
+            const capTop = scene.add.rectangle(0, -52, 48, 20, 0xd71920).setStrokeStyle(2, 0x8f1017);
+            const capOpening = scene.add.ellipse(0, -40, 30, 11, 0x4a2418);
+            const capButton = scene.add.circle(0, -63, 4, 0x8f1017);
+
+            const capHeart = scene.add.text(0, -53, "♥", {
+                fontSize: "13px",
+                color: "#ffffff",
+                fontFamily: "Arial",
+                fontStyle: "bold"
+            }).setOrigin(0.5);
+
+            const hoodieHeart = scene.add.text(0, 18, "♥", {
+                fontSize: "30px",
+                color: "#ffffff",
+                fontFamily: "Arial",
+                fontStyle: "bold"
+            }).setOrigin(0.5);
+
+            player.add([
+                shadow,
+                leftLeg,
+                rightLeg,
+                leftShoe,
+                rightShoe,
+                leftArm,
+                rightArm,
+                leftHand,
+                rightHand,
+                body,
+                bodyShade,
+                bodyHighlight,
+                hoodieHeart,
+                leftEar,
+                rightEar,
+                hairBack,
+                hairShade,
+                hairHighlight,
+                capBack,
+                capShade,
+                capTop,
+                capOpening,
+                capButton,
+                capHeart
+            ]);
+
+            player.setDepth(10);
+            return player;
+        }
+
+        function createCupVisual(scene, x, y) {
+            const cup = scene.add.container(x, y);
+
+            const shadow = scene.add.ellipse(0, 58, 58, 14, 0x000000, 0.18);
+            const body = scene.add.rectangle(0, 15, 54, 70, 0x5a3522).setStrokeStyle(3, 0x2a1710);
+            const shade = scene.add.rectangle(16, 15, 16, 70, 0x3a2116, 0.35);
+            const highlight = scene.add.rectangle(-14, 12, 7, 55, 0xffffff, 0.18);
+            const lid = scene.add.rectangle(0, -28, 68, 18, 0x1f1f1f).setStrokeStyle(3, 0x111111);
+            const lidTop = scene.add.ellipse(0, -37, 55, 14, 0x2d2d2d).setStrokeStyle(2, 0x111111);
+            const sleeve = scene.add.rectangle(0, 22, 44, 28, 0x6f4934).setStrokeStyle(2, 0x3a2116);
+
+            const logo = scene.add.text(0, 22, "♥", {
+                fontSize: "24px",
+                color: "#ffffff",
+                fontFamily: "Arial",
+                fontStyle: "bold"
+            }).setOrigin(0.5);
+
+            cup.add([shadow, body, shade, highlight, lid, lidTop, sleeve, logo]);
+            cup.setDepth(6);
+
+            return cup;
+        }
+
+        function spawnObstacle() {
+            if (gameOver) return;
+
+            const width = this.scale.width;
+
+            const topLeft = width / 2 - width * 0.12;
+            const topRight = width / 2 + width * 0.12;
+
+            const x = Phaser.Math.Between(topLeft, topRight);
+
+            const hitbox = this.add.rectangle(x, -50, 70, 95, 0xff0000, 0);
+            this.physics.add.existing(hitbox);
+
+            hitbox.baseX = x;
+            hitbox.visual = createCupVisual(this, x, -70);
+
+            obstacles.add(hitbox);
+        }
+
+        function spawnHeart() {
+            if (gameOver) return;
+
+            const width = this.scale.width;
+
+            const topLeft = width / 2 - width * 0.12;
+            const topRight = width / 2 + width * 0.12;
+
+            const x = Phaser.Math.Between(topLeft, topRight);
+
+            const hand = this.physics.add.image(x, -40, "hand");
+
+            hand.setScale(0.08);
+            hand.setDepth(30);
+
+            hand.body.setSize(hand.width * 0.45, hand.height * 0.45);
+
+            hand.baseX = x;
+
+            coins.add(hand);
+        }
+
+        function createHandSignVisual(scene, x, y) {
+            const hand = scene.add.container(x, y);
+
+            const skin = 0xffc2a1;
+            const shade = 0xe89b78;
+            const deepShade = 0xc9795f;
+            const outline = 0x2a2321;
+            const highlight = 0xffffff;
+
+            // soft ground shadow
+            const shadow = scene.add.ellipse(0, 56, 62, 14, 0x000000, 0.16);
+
+            // wrist
+            const wristBack = scene.add.ellipse(0, 43, 30, 30, outline);
+            const wrist = scene.add.ellipse(0, 43, 22, 22, skin);
+
+            // palm base
+            const palmBack = scene.add.ellipse(0, 12, 58, 60, outline);
+            const palm = scene.add.ellipse(0, 12, 49, 51, skin);
+
+            // palm 3D shading
+            const palmShade = scene.add.ellipse(13, 15, 18, 42, shade, 0.55);
+            const palmDeepShade = scene.add.ellipse(20, 18, 8, 30, deepShade, 0.35);
+            const palmHighlight = scene.add.ellipse(-14, 4, 8, 34, highlight, 0.22);
+
+            // index finger, long and rounded
+            const indexBack = scene.add.ellipse(-18, -36, 24, 74, outline);
+            const index = scene.add.ellipse(-18, -36, 16, 66, skin);
+            const indexShade = scene.add.ellipse(-13, -35, 5, 56, shade, 0.45);
+            const indexHighlight = scene.add.ellipse(-22, -38, 4, 48, highlight, 0.18);
+
+            // pinky finger, slightly shorter
+            const pinkyBack = scene.add.ellipse(25, -34, 23, 66, outline);
+            const pinky = scene.add.ellipse(25, -34, 15, 58, skin);
+            const pinkyShade = scene.add.ellipse(30, -33, 5, 48, shade, 0.45);
+            const pinkyHighlight = scene.add.ellipse(21, -35, 4, 42, highlight, 0.16);
+
+            // thumb, angled outward
+            const thumbBack = scene.add.ellipse(-35, 6, 26, 53, outline);
+            thumbBack.setAngle(-38);
+
+            const thumb = scene.add.ellipse(-35, 6, 17, 43, skin);
+            thumb.setAngle(-38);
+
+            const thumbShade = scene.add.ellipse(-30, 8, 6, 34, shade, 0.45);
+            thumbShade.setAngle(-38);
+
+            // folded fingers in front
+            const middleFoldBack = scene.add.ellipse(-6, -9, 22, 33, outline);
+            const middleFold = scene.add.ellipse(-6, -9, 16, 27, shade);
+
+            const ringFoldBack = scene.add.ellipse(11, -8, 22, 33, outline);
+            const ringFold = scene.add.ellipse(11, -8, 16, 27, shade);
+
+            const middleHighlight = scene.add.ellipse(-10, -13, 5, 16, highlight, 0.18);
+            const ringHighlight = scene.add.ellipse(7, -12, 5, 16, highlight, 0.15);
+
+            // softer fingertip circles
+            const indexTip = scene.add.circle(-18, -70, 8, skin).setStrokeStyle(2, outline);
+            const pinkyTip = scene.add.circle(25, -64, 8, skin).setStrokeStyle(2, outline);
+            const thumbTip = scene.add.circle(-47, -10, 8, skin).setStrokeStyle(2, outline);
+
+            // cute knuckle lines
+            const knuckle1 = scene.add.line(0, 0, -13, 4, -2, 12, outline).setLineWidth(2);
+            const knuckle2 = scene.add.line(0, 0, 4, 4, 9, 12, outline).setLineWidth(2);
+
+            hand.add([
+                shadow,
+
+                indexBack,
+                pinkyBack,
+                thumbBack,
+                wristBack,
+                palmBack,
+
+                wrist,
+                palm,
+                palmShade,
+                palmDeepShade,
+                palmHighlight,
+
+                index,
+                indexShade,
+                indexHighlight,
+                pinky,
+                pinkyShade,
+                pinkyHighlight,
+                thumb,
+                thumbShade,
+
+                middleFoldBack,
+                ringFoldBack,
+                middleFold,
+                ringFold,
+                middleHighlight,
+                ringHighlight,
+
+                indexTip,
+                pinkyTip,
+                thumbTip,
+                knuckle1,
+                knuckle2
+            ]);
+
+            hand.setDepth(30);
+            hand.setScale(0.92);
+
+            return hand;
+        }
+
+        function collectHeart(playerObj, heart) {
+            if (heart.visual) heart.visual.destroy();
+
+            heart.destroy();
+            heartCount++;
+            heartText.setText("🤟 " + heartCount);
+        }
+
+        function hitObstacle() {
+            if (gameOver) return;
+
+            gameOver = true;
+
+            if (playerVisual) playerVisual.setAlpha(0.45);
+
+            const centerX = this.scale.width / 2;
+            const centerY = this.scale.height / 2;
+
+            this.add.rectangle(centerX, centerY, this.scale.width, this.scale.height, 0x000000, 0.35)
+                .setDepth(100);
+
+            const panel = this.add.rectangle(centerX, centerY, 380, 300, 0xffffff, 0.97)
+                .setDepth(101);
+
+            panel.setStrokeStyle(3, 0xc91821);
+
+            this.add.text(centerX, centerY - 95, "Game Over", {
+                fontSize: "38px",
+                color: "#c91821",
+                fontFamily: "Arial",
+                fontStyle: "bold"
+            }).setOrigin(0.5).setDepth(102);
+
+            this.add.text(centerX, centerY - 35, " 🤟 " + heartCount, {
+                fontSize: "22px",
+                color: "#2a2321",
+                fontFamily: "Arial"
+            }).setOrigin(0.5).setDepth(102);
+
+            const buttonStyle = {
+                fontSize: "22px",
+                fontFamily: "Arial",
+                color: "#ffffff",
+                padding: { x: 28, y: 12 }
+            };
+
+            const restartBtn = this.add.text(centerX, centerY + 30, "Restart", {
+                ...buttonStyle,
+                backgroundColor: "#c91821"
+            }).setOrigin(0.5).setDepth(102).setInteractive({ useHandCursor: true });
+
+            const exitBtn = this.add.text(centerX, centerY + 85, "Exit", {
+                ...buttonStyle,
+                backgroundColor: "#444"
+            }).setOrigin(0.5).setDepth(102).setInteractive({ useHandCursor: true });
+
+            restartBtn.on("pointerdown", () => {
+                this.scene.restart();
+            });
+
+            exitBtn.on("pointerdown", () => {
+                window.parent.location.href = "/Game";
+            });
+        }
+
+        function spawnScenery(yPos) {
+            const width = this.scale.width;
+
+            const side = Phaser.Math.Between(0, 1);
+            const progress = Phaser.Math.Clamp(yPos / this.scale.height, 0, 1);
+
+            const center = width / 2;
+            const roadTopHalf = this.roadTopWidth / 2;
+            const roadBottomHalf = this.roadBottomWidth / 2;
+            const roadHalf = Phaser.Math.Linear(roadTopHalf, roadBottomHalf, progress);
+
+            const roadEdge = side === 0
+                ? center - roadHalf
+                : center + roadHalf;
+
+            // 🔥 FIXED spacing (more natural)
+            const offset = Phaser.Math.Linear(110, 220, progress);
+
+            const x = side === 0
+                ? roadEdge - offset
+                : roadEdge + offset;
+
+            const type = Phaser.Math.Between(0, 2);
+
+            let item;
+
+            if (type === 0) {
+                item = createTree(this, x, yPos);
+                item.originalScale = 1;
+            } else if (type === 1) {
+                item = createLamp(this, x, yPos);
+                item.originalScale = 1;
+            } else {
+                item = createKopiCintaCafe(this, x, yPos, side);
+                item.originalScale = 0.95;
+            }
+
+            item.side = side;
+            item.setDepth(1);
+            scenery.add(item);
+        }
+
+        function createTree(scene, x, y) {
+            const tree = scene.add.container(x, y);
+
+            const shadow = scene.add.ellipse(0, 62, 58, 14, 0x000000, 0.14);
+
+            const trunk = scene.add.rectangle(0, 34, 16, 48, 0x7b4a2e)
+                .setStrokeStyle(2, 0x4b2e1f);
+            const trunkShade = scene.add.rectangle(5, 34, 5, 45, 0x4b2e1f, 0.35);
+
+            const leafBack = scene.add.circle(0, -4, 34, 0x8f1017, 0.25);
+            const leaf1 = scene.add.circle(0, -8, 30, 0xd94b4b)
+                .setStrokeStyle(2, 0x8f1017);
+            const leaf2 = scene.add.circle(-22, 10, 24, 0xf08080)
+                .setStrokeStyle(2, 0x8f1017);
+            const leaf3 = scene.add.circle(22, 10, 24, 0xf25f5c)
+                .setStrokeStyle(2, 0x8f1017);
+
+            const leafHighlight = scene.add.ellipse(-13, -12, 10, 28, 0xffffff, 0.18);
+
+            tree.add([
+                shadow,
+                trunk,
+                trunkShade,
+                leafBack,
+                leaf1,
+                leaf2,
+                leaf3,
+                leafHighlight
+            ]);
+
+            return tree;
+        }
+
+        function createLamp(scene, x, y) {
+            const lamp = scene.add.container(x, y);
+
+            const shadow = scene.add.ellipse(0, 70, 42, 10, 0x000000, 0.14);
+
+            const pole = scene.add.rectangle(0, 25, 7, 78, 0x2a2321);
+            const poleHighlight = scene.add.rectangle(-2, 25, 2, 70, 0xffffff, 0.16);
+
+            const base = scene.add.ellipse(0, 66, 30, 10, 0x2a2321);
+
+            const glow = scene.add.circle(0, -4, 25, 0xffe7a3, 0.28);
+            const light = scene.add.circle(0, -5, 15, 0xffe7a3, 0.85)
+                .setStrokeStyle(2, 0x2a2321);
+
+            const lampTop = scene.add.rectangle(0, -22, 32, 8, 0x2a2321);
+            const lampCap = scene.add.triangle(0, -32, -16, 10, 16, 10, 0, -10, 0x2a2321);
+
+            lamp.add([
+                shadow,
+                glow,
+                pole,
+                poleHighlight,
+                base,
+                light,
+                lampTop,
+                lampCap
+            ]);
+
+            return lamp;
+        }
+
+        function createKopiCintaCafe(scene, x, y, side) {
+            const cafe = scene.add.container(x, y);
+
+            const shadow = scene.add.ellipse(0, 78, 110, 18, 0x000000, 0.16);
+
+            const cafeImg = scene.add.image(0, 22, "cafe");
+
+            // base size
+            cafeImg.setScale(0.38);
+
+            // face road
+            cafeImg.setFlipX(side === 1);
+
+            cafe.add([shadow, cafeImg]);
+
+            // tilt toward road
+            cafe.setAngle(side === 0 ? 7 : -7);
+
+            cafe.setDepth(1);
+            cafe.originalScale = 0.95;
+
+            return cafe;
+        }
+    </script>
+</body>
+</html>

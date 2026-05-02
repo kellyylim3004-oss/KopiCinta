@@ -28,3 +28,4 @@ D:\KOPI CINTA\KopiCinta\obj\Debug\net8.0\refint\KopiCinta.dll
 D:\KOPI CINTA\KopiCinta\obj\Debug\net8.0\KopiCinta.pdb
 D:\KOPI CINTA\KopiCinta\obj\Debug\net8.0\KopiCinta.genruntimeconfig.cache
 D:\KOPI CINTA\KopiCinta\obj\Debug\net8.0\ref\KopiCinta.dll
+D:\KOPI CINTA\KopiCinta\obj\Debug\net8.0\KopiCinta.sourcelink.json

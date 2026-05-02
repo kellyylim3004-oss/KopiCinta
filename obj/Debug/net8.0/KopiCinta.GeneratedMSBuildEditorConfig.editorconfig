@@ -26,6 +26,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBhQXJ0aUNpbnRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/KOPI CINTA/KopiCinta/Pages/BookmarkSpecial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va21hcmtTcGVjaWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/KOPI CINTA/KopiCinta/Pages/Careers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZWVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/KOPI CINTA/KopiCinta/Pages/CharisOpening.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcmlzT3BlbmluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/KOPI CINTA/KopiCinta/Pages/CoffeeBlessingsKomunitas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29mZmVlQmxlc3NpbmdzS29tdW5pdGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/KOPI CINTA/KopiCinta/Pages/CoffeeExperience.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29mZmVlRXhwZXJpZW5jZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/KOPI CINTA/KopiCinta/Pages/Collaborations.cshtml]
@@ -114,6 +126,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm90aUNpbnRhQnlBcmRpc2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/KOPI CINTA/KopiCinta/Pages/Runner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUnVubmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/KOPI CINTA/KopiCinta/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -136,6 +152,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/KOPI CINTA/KopiCinta/Pages/TeamArdisa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbUFyZGlzYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/KOPI CINTA/KopiCinta/Pages/TeamAudrey.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbUF1ZHJleS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/KOPI CINTA/KopiCinta/Pages/TeamAxel.cshtml]
@@ -164,10 +184,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/KOPI CINTA/KopiCinta/Pages/Workshops.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya3Nob3BzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/KOPI CINTA/KopiCinta/Pages/WorkshopTuli.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya3Nob3BUdWxpLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/KOPI CINTA/KopiCinta/Pages/_ViewImports.cshtml]
