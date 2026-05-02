@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\KOPI CINTA\\KopiCinta\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\pages\\stories.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:pages\\stories.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\pages\\collaborations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -106,11 +106,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "script.js",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\js\\script.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\script.js",
@@ -124,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "style.css",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
@@ -133,12 +133,11 @@
               "ViewState": "AQIAAD8MAAAAAAAAAAAYwEIMAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-05-02T11:10:30.528Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Error.cshtml",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Error.cshtml",
               "RelativeDocumentMoniker": "Pages\\Error.cshtml",
@@ -146,12 +145,11 @@
               "RelativeToolTip": "Pages\\Error.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAuwB0AAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T21:14:51.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T21:14:51.654Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Careers.cshtml",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Careers.cshtml",
               "RelativeDocumentMoniker": "Pages\\Careers.cshtml",
@@ -159,12 +157,11 @@
               "RelativeToolTip": "Pages\\Careers.cshtml",
               "ViewState": "AQIAABoAAAAAAAAAAAAmwC4AAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T21:05:44.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T21:05:44.92Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Stories.cshtml",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Stories.cshtml",
               "RelativeDocumentMoniker": "Pages\\Stories.cshtml",
@@ -172,25 +169,24 @@
               "RelativeToolTip": "Pages\\Stories.cshtml",
               "ViewState": "AQIAABUAAAAAAAAAAAAmwCkAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T20:52:32.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T20:52:32.66Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
               "ToolTip": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Index.cshtml",
               "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AQIAALoAAAAAAAAAAAAAAKEAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-02T20:41:11.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Dictionary.cshtml",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Dictionary.cshtml",
               "RelativeDocumentMoniker": "Pages\\Dictionary.cshtml",
@@ -198,8 +194,7 @@
               "RelativeToolTip": "Pages\\Dictionary.cshtml",
               "ViewState": "AQIAAOQBAAAAAAAAAAAuwPsBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T13:35:20.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T13:35:20.958Z"
             },
             {
               "$type": "Document",
@@ -211,8 +206,7 @@
               "RelativeToolTip": "Pages\\TakeOneLeaveOne.cshtml",
               "ViewState": "AQIAAHsAAAAAAAAAAAAUwJAAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T13:08:49.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T13:08:49.566Z"
             },
             {
               "$type": "Document",
@@ -224,8 +218,7 @@
               "RelativeToolTip": "Pages\\LetsSignItCorner.cshtml",
               "ViewState": "AQIAAJcAAAAAAAAAAAAkwKkAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T13:05:35.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T13:05:35.606Z"
             },
             {
               "$type": "Document",
@@ -237,8 +230,7 @@
               "RelativeToolTip": "Pages\\GoesToUniversities.cshtml",
               "ViewState": "AQIAAAMBAAAAAAAAAAAUwBgBAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T13:00:34.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T13:00:34.877Z"
             },
             {
               "$type": "Document",
@@ -250,8 +242,7 @@
               "RelativeToolTip": "Pages\\CoffeeBlessingsKomunitas.cshtml",
               "ViewState": "AQIAAIMAAAAAAAAAAIBJwJwAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T12:57:45.209Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T12:57:45.209Z"
             },
             {
               "$type": "Document",
@@ -263,8 +254,7 @@
               "RelativeToolTip": "Pages\\CoffeeBlessings.cshtml",
               "ViewState": "AQIAAJQAAAAAAAAAAAAmwKgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T12:54:44.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T12:54:44.057Z"
             },
             {
               "$type": "Document",
@@ -276,8 +266,7 @@
               "RelativeToolTip": "Pages\\Workshops.cshtml",
               "ViewState": "AQIAAC0AAAAAAAAAAIBJwDYAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T12:52:03.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T12:52:03.38Z"
             },
             {
               "$type": "Document",
@@ -289,12 +278,11 @@
               "RelativeToolTip": "Pages\\CoffeeExperience.cshtml",
               "ViewState": "AQIAAGwAAAAAAAAAAAAUwHYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T12:48:10.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T12:48:10.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
@@ -302,8 +290,7 @@
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAACcAAAAAAAAAAAAuwDgAAABuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T12:32:00.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T12:32:00.269Z"
             },
             {
               "$type": "Document",
@@ -315,8 +302,7 @@
               "RelativeToolTip": "Pages\\RotiCintaByArdisa.cshtml",
               "ViewState": "AQIAAGkAAAAAAAAAAAAUwHUAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T12:24:44.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T12:24:44.398Z"
             },
             {
               "$type": "Document",
@@ -328,8 +314,7 @@
               "RelativeToolTip": "Pages\\Collaborations.cshtml",
               "ViewState": "AQIAADAAAAAAAAAAAAAAAEUAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T12:08:07.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T12:08:07.314Z"
             },
             {
               "$type": "Document",
@@ -341,8 +326,7 @@
               "RelativeToolTip": "Pages\\CharisOpening.cshtml",
               "ViewState": "AQIAAKkAAAAAAAAAAAAUwL4AAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T11:53:46.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T11:53:46.073Z"
             },
             {
               "$type": "Document",
@@ -354,8 +338,7 @@
               "RelativeToolTip": "Pages\\Community.cshtml",
               "ViewState": "AQIAADEAAAAAAAAAAAAYwDQAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T11:30:27.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T11:30:27.099Z"
             },
             {
               "$type": "Document",
@@ -367,8 +350,7 @@
               "RelativeToolTip": "Pages\\ApaArtiCinta.cshtml",
               "ViewState": "AQIAAHsAAAAAAAAAAAAYwJQAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T11:17:29.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T11:17:29.647Z"
             },
             {
               "$type": "Document",
@@ -380,8 +362,7 @@
               "RelativeToolTip": "Pages\\About.cshtml",
               "ViewState": "AQIAAHwAAAAAAAAAAAAYwJUAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-02T10:25:52.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T10:25:52.084Z"
             },
             {
               "$type": "Document",
@@ -393,8 +374,7 @@
               "RelativeToolTip": "Pages\\Runner.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAIBZwBoAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-24T12:14:21.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T12:14:21.183Z"
             },
             {
               "$type": "Document",
@@ -406,12 +386,11 @@
               "RelativeToolTip": "Pages\\Game.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAIBJwB8AAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-24T12:13:31.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T12:13:31.567Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "index.html",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\game\\index.html",
               "RelativeDocumentMoniker": "wwwroot\\game\\index.html",
@@ -419,8 +398,7 @@
               "RelativeToolTip": "wwwroot\\game\\index.html",
               "ViewState": "AQIAAF8AAAAAAAAAAAAYwHQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-04-24T12:13:04.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T12:13:04.22Z"
             }
           ]
         }
