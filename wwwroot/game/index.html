@@ -304,23 +304,19 @@
                 heart.y += speed * dt;
 
                 const progress = Phaser.Math.Clamp(heart.y / this.scale.height, 0, 1);
-                const scale = Phaser.Math.Linear(0.25, 1.35, progress);
+                const scale = Phaser.Math.Linear(0.08, 0.18, progress);
 
                 const center = this.scale.width / 2;
                 const spread = Phaser.Math.Linear(0.25, 1.0, progress);
 
                 heart.x = center + (heart.baseX - center) * spread;
 
-                if (heart.visual) {
-                    heart.visual.x = heart.x;
-                    heart.visual.y = heart.y;
-                    heart.visual.setScale(scale);
-                }
+                // 🔥 FIX: directly scale the image (no .visual)
+                heart.setScale(scale);
 
                 heart.body.updateFromGameObject();
 
                 if (heart.y > this.scale.height + 100) {
-                    if (heart.visual) heart.visual.destroy();
                     heart.destroy();
                 }
             });
