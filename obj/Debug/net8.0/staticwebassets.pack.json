@@ -813,8 +813,16 @@
       "PackagePath": "staticwebassets\\images\\dropdown\\workshops-dropdown.jpg"
     },
     {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\hand.png",
+      "PackagePath": "staticwebassets\\images\\hand.png"
+    },
+    {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\hbii-hdi\\cover.png",
       "PackagePath": "staticwebassets\\images\\hbii-hdi\\cover.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\kopi-cinta-cafe.png",
+      "PackagePath": "staticwebassets\\images\\kopi-cinta-cafe.png"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\logo-kopi-cinta.png",
@@ -1527,6 +1535,10 @@
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\tulitalks\\selamat-ulang-tahun.mp4",
       "PackagePath": "staticwebassets\\videos\\tulitalks\\selamat-ulang-tahun.mp4"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\tulitalks\\sibi-dan-bisindo.mp4",
+      "PackagePath": "staticwebassets\\videos\\tulitalks\\sibi-dan-bisindo.mp4"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\tulitalks\\social-media.mp4",

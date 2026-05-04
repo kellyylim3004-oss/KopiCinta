@@ -64,8 +64,7 @@
         const game = new Phaser.Game(config);
         function preload() {
             this.load.image("cafe", "/images/kopi-cinta-cafe.png");
-            this.load.image("hand", "/images/hand.png");
-        }
+            this.load.image("hand", "/images/hand-v2.png?v=2");        }
         function create() {
             const width = this.scale.width;
             const height = this.scale.height;
@@ -461,8 +460,13 @@
 
             hand.setScale(0.08);
             hand.setDepth(30);
+            hand.setOrigin(0.5);
 
-            hand.body.setSize(hand.width * 0.45, hand.height * 0.45);
+            hand.body.setSize(120, 120);
+            hand.body.setOffset(
+                hand.width / 2 - 60,
+                hand.height / 2 - 60
+            );
 
             hand.baseX = x;
 

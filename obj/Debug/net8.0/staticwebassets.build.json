@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Uqv2pgaZLOr6JUdr6rDW4X7PZ0gDkTloWC9ftt1MQes=",
+  "Hash": "b2GLk3R1rL1+a5rGbeYskJghmKqyky3t5tjsHZoYlJE=",
   "Source": "KopiCinta",
   "BasePath": "_content/KopiCinta",
   "Mode": "Default",
@@ -2867,6 +2867,25 @@
       "OriginalItemSpec": "wwwroot\\images\\Final Dethod Buku-40.jpg"
     },
     {
+      "Identity": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\hand.png",
+      "SourceId": "KopiCinta",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\",
+      "BasePath": "_content/KopiCinta",
+      "RelativePath": "images/hand.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hand.png"
+    },
+    {
       "Identity": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\hbii-hdi\\cover.png",
       "SourceId": "KopiCinta",
       "SourceType": "Discovered",
@@ -3644,6 +3663,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\KelasBahasaIsyarat\\kelas-bahasa-hero.jpg"
+    },
+    {
+      "Identity": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\kopi-cinta-cafe.png",
+      "SourceId": "KopiCinta",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\",
+      "BasePath": "_content/KopiCinta",
+      "RelativePath": "images/kopi-cinta-cafe.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\kopi-cinta-cafe.png"
     },
     {
       "Identity": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\LetsSignItCorner\\lsi-1.jpg",
@@ -7292,6 +7330,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\videos\\tulitalks\\selamat-ulang-tahun.mp4"
+    },
+    {
+      "Identity": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\tulitalks\\sibi-dan-bisindo.mp4",
+      "SourceId": "KopiCinta",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\",
+      "BasePath": "_content/KopiCinta",
+      "RelativePath": "videos/tulitalks/sibi-dan-bisindo.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\videos\\tulitalks\\sibi-dan-bisindo.mp4"
     },
     {
       "Identity": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\videos\\tulitalks\\social-media.mp4",
