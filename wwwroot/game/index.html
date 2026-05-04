@@ -61,7 +61,11 @@
         let targetX;
         let isDragging = false;
 
-        const game = new Phaser.Game(config);
+        if (window.kopiCintaRunnerGame) {
+            window.kopiCintaRunnerGame.destroy(true);
+        }
+
+        window.kopiCintaRunnerGame = new Phaser.Game(config);
         function preload() {
             this.load.image("cafe", "../images/kopi-cinta-cafe.png?v=999");
             this.load.image("hand", "../images/hand-v2.png?v=999");
