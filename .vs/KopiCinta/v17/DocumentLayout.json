@@ -132,8 +132,7 @@
               "ViewState": "AQIAADsMAAAAAAAAAAAUwE8MAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-05-02T11:10:30.528Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -395,7 +394,7 @@
               "RelativeDocumentMoniker": "wwwroot\\game\\index.html",
               "ToolTip": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\game\\index.html",
               "RelativeToolTip": "wwwroot\\game\\index.html",
-              "ViewState": "AQIAAI4AAAAAAAAAAAAYwKMAAAANAAAA",
+              "ViewState": "AQIAALEBAAAAAAAAAAAmwL4BAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-04-24T12:13:04.22Z",
               "EditorCaption": ""

@@ -69,6 +69,7 @@
         function preload() {
             this.load.image("cafe", "../images/kopi-cinta-cafe.png?v=999");
             this.load.image("hand", "../images/hand-v2.png?v=999");
+            this.load.image("cup", "../images/cup.png?v=1");
         }
         function create() {
             const width = this.scale.width;
@@ -428,29 +429,7 @@
             return player;
         }
 
-        function createCupVisual(scene, x, y) {
-            const cup = scene.add.container(x, y);
-
-            const shadow = scene.add.ellipse(0, 58, 58, 14, 0x000000, 0.18);
-            const body = scene.add.rectangle(0, 15, 54, 70, 0x5a3522).setStrokeStyle(3, 0x2a1710);
-            const shade = scene.add.rectangle(16, 15, 16, 70, 0x3a2116, 0.35);
-            const highlight = scene.add.rectangle(-14, 12, 7, 55, 0xffffff, 0.18);
-            const lid = scene.add.rectangle(0, -28, 68, 18, 0x1f1f1f).setStrokeStyle(3, 0x111111);
-            const lidTop = scene.add.ellipse(0, -37, 55, 14, 0x2d2d2d).setStrokeStyle(2, 0x111111);
-            const sleeve = scene.add.rectangle(0, 22, 44, 28, 0x6f4934).setStrokeStyle(2, 0x3a2116);
-
-            const logo = scene.add.text(0, 22, "♥", {
-                fontSize: "24px",
-                color: "#ffffff",
-                fontFamily: "Arial",
-                fontStyle: "bold"
-            }).setOrigin(0.5);
-
-            cup.add([shadow, body, shade, highlight, lid, lidTop, sleeve, logo]);
-            cup.setDepth(6);
-
-            return cup;
-        }
+        
 
         function spawnObstacle() {
             if (gameOver) return;
@@ -462,13 +441,27 @@
 
             const x = Phaser.Math.Between(topLeft, topRight);
 
-            const hitbox = this.add.rectangle(x, -50, 70, 95, 0xff0000, 0);
-            this.physics.add.existing(hitbox);
+            // ✅ NEW IMAGE CUP
+            const obstacle = this.physics.add.image(x, -60, "cup");
 
-            hitbox.baseX = x;
-            hitbox.visual = createCupVisual(this, x, -70);
+            obstacle.setScale(0.05);
+            obstacle.setDepth(20);
+            obstacle.setOrigin(0.5);
 
-            obstacles.add(hitbox);
+            // 🔥 hitbox fix
+            obstacle.body.setSize(
+                obstacle.width * 0.5,
+                obstacle.height * 0.6
+            );
+
+            obstacle.body.setOffset(
+                obstacle.width * 0.25,
+                obstacle.height * 0.2
+            );
+
+            obstacle.baseX = x;
+
+            obstacles.add(obstacle);
         }
 
         function spawnHeart() {

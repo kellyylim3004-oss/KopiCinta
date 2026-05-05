@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KopiCinta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18203c3ee46f13035cf192f167557152aa312fbd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d61a434a1eea3e2f48257c7339fd89d865d140ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("KopiCinta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KopiCinta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
