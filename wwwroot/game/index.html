@@ -299,22 +299,21 @@
                 obstacle.y += speed * dt;
 
                 const progress = Phaser.Math.Clamp(obstacle.y / this.scale.height, 0, 1);
-                const scale = Phaser.Math.Linear(0.25, 1.35, progress);
+                const scale = Phaser.Math.Linear(0.05, 0.12, progress);
 
                 const center = this.scale.width / 2;
                 const spread = Phaser.Math.Linear(0.25, 1.0, progress);
 
-                obstacle.x = center + (obstacle.baseX - center) * spread;
+                const targetX = center + (obstacle.baseX - center) * spread;
+
+                // smooth movement, no jumping
+                obstacle.x = Phaser.Math.Linear(obstacle.x, targetX, 0.15);
+
+                obstacle.setScale(scale);
+
                 obstacle.body.updateFromGameObject();
 
-                if (obstacle.visual) {
-                    obstacle.visual.x = obstacle.x;
-                    obstacle.visual.y = obstacle.y - 15;
-                    obstacle.visual.setScale(scale);
-                }
-
                 if (obstacle.y > this.scale.height + 120) {
-                    if (obstacle.visual) obstacle.visual.destroy();
                     obstacle.destroy();
                 }
             });
