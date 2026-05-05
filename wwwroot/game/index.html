@@ -55,7 +55,7 @@
         let playerHitbox, playerVisual;
         let obstacles, coins, scenery, cursors;
         let heartCount = 0;
-        let speed = 260;
+        let speed = 160;
         let gameOver = false;
         let heartText;
         let targetX;
@@ -122,32 +122,43 @@
             this.roadTopWidth = width * 0.24;
             this.roadBottomWidth = width * 0.70;
 
-            this.add.polygon(0, 0, [
-                width / 2 - this.roadTopWidth / 2, 0,
-                width / 2 + this.roadTopWidth / 2, 0,
-                width / 2 + this.roadBottomWidth / 2, height,
-                width / 2 - this.roadBottomWidth / 2, height
-            ], 0xfff3cf).setOrigin(0, 0).setDepth(1);
+            const g = this.add.graphics();
 
-            this.add.rectangle(width / 2, height * 0.25, width, height * 0.5, 0xfff3cf, 0.4);
+            // 🧁 cream base (matches --cream)
+            g.fillStyle(0xfff6f1, 1);
+            g.beginPath();
+            g.moveTo(width / 2 - this.roadTopWidth / 2, 0);
+            g.lineTo(width / 2 + this.roadTopWidth / 2, 0);
+            g.lineTo(width / 2 + this.roadBottomWidth / 2, height);
+            g.lineTo(width / 2 - this.roadBottomWidth / 2, height);
+            g.closePath();
+            g.fillPath();
+            g.setDepth(1);
 
-            this.add.line(
-                0, 0,
-                width / 2 - this.roadTopWidth / 2, 0,
-                width / 2 - this.roadBottomWidth / 2, height,
-                0xd79a82
-            ).setOrigin(0, 0).setLineWidth(5).setDepth(2);
+            // 🔴 red borders (matches --red)
+            g.lineStyle(6, 0xc91821, 1);
 
-            this.add.line(
-                0, 0,
-                width / 2 + this.roadTopWidth / 2, 0,
-                width / 2 + this.roadBottomWidth / 2, height,
-                0xd79a82
-            ).setOrigin(0, 0).setLineWidth(5).setDepth(2);
+            g.beginPath();
+            g.moveTo(width / 2 - this.roadTopWidth / 2, 0);
+            g.lineTo(width / 2 - this.roadBottomWidth / 2, height);
+            g.strokePath();
 
+            g.beginPath();
+            g.moveTo(width / 2 + this.roadTopWidth / 2, 0);
+            g.lineTo(width / 2 + this.roadBottomWidth / 2, height);
+            g.strokePath();
+
+            // ✨ soft center lines (matches --red-soft)
             this.laneLines = [];
             for (let i = 0; i < 12; i++) {
-                const line = this.add.rectangle(width / 2, i * 100, 7, 55, 0xffffff, 0.65);
+                const line = this.add.rectangle(
+                    width / 2,
+                    i * 100,
+                    6,
+                    50,
+                    0xe35b61,
+                    0.6
+                );
                 line.setDepth(3);
                 this.laneLines.push(line);
             }
@@ -313,11 +324,18 @@
                 heart.y += speed * dt;
 
                 const progress = Phaser.Math.Clamp(heart.y / this.scale.height, 0, 1);
+
+                // smoother scaling
                 const scale = Phaser.Math.Linear(0.05, 0.12, progress);
+
+                // 🔥 FIX: smooth X movement instead of snapping
                 const center = this.scale.width / 2;
                 const spread = Phaser.Math.Linear(0.25, 1.0, progress);
 
-                heart.x = center + (heart.baseX - center) * spread;
+                const targetX = center + (heart.baseX - center) * spread;
+
+                heart.x = Phaser.Math.Linear(heart.x, targetX, 0.15);
+
                 heart.setScale(scale);
 
                 heart.body.updateFromGameObject();

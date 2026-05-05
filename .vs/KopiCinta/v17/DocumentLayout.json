@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:wwwroot\\game\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\pages\\dictionary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:pages\\dictionary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -110,7 +110,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "script.js",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\js\\script.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\script.js",
@@ -123,16 +123,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "style.css",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
               "ToolTip": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\css\\style.css",
               "RelativeToolTip": "wwwroot\\css\\style.css",
-              "ViewState": "AQIAAD8MAAAAAAAAAAAYwEIMAAAMAAAA",
+              "ViewState": "AQIAADsMAAAAAAAAAAAUwE8MAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-05-02T11:10:30.528Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -172,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
@@ -184,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Dictionary.cshtml",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Dictionary.cshtml",
               "RelativeDocumentMoniker": "Pages\\Dictionary.cshtml",
@@ -394,7 +395,7 @@
               "RelativeDocumentMoniker": "wwwroot\\game\\index.html",
               "ToolTip": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\game\\index.html",
               "RelativeToolTip": "wwwroot\\game\\index.html",
-              "ViewState": "AQIAAPsCAAAAAAAAAAAUwAIDAAAEAAAA",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAYwKMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-04-24T12:13:04.22Z",
               "EditorCaption": ""
