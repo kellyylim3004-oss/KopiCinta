@@ -349,6 +349,86 @@
       "PackagePath": "staticwebassets\\images\\HOME\\FOTO KOPCIN-62.jpg"
     },
     {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\coffee-bean.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\coffee-bean.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\coffee-machine.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\coffee-machine.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\envelope-closed.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\envelope-closed.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\envelope.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\envelope.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\mailbox.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\mailbox.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\memory-1.jpg",
+      "PackagePath": "staticwebassets\\images\\HOME\\memory-1.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\memory-2.jpg",
+      "PackagePath": "staticwebassets\\images\\HOME\\memory-2.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\memory-3.jpg",
+      "PackagePath": "staticwebassets\\images\\HOME\\memory-3.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\memory-4.jpg",
+      "PackagePath": "staticwebassets\\images\\HOME\\memory-4.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\memory-5.jpg",
+      "PackagePath": "staticwebassets\\images\\HOME\\memory-5.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-1.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\sign-1.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-2.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\sign-2.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-3.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\sign-3.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-4.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\sign-4.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-5.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\sign-5.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-6.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\sign-6.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-7.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\sign-7.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-8.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\sign-8.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-9.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\sign-9.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\world-map.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\world-map.png"
+    },
+    {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\KelasBahasaIsyarat\\kbi-cover.jpg",
       "PackagePath": "staticwebassets\\images\\KelasBahasaIsyarat\\kbi-cover.jpg"
     },
@@ -773,12 +853,36 @@
       "PackagePath": "staticwebassets\\images\\coffee-experience\\coffe experience-43.jpg"
     },
     {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\cup.png",
+      "PackagePath": "staticwebassets\\images\\cup.png"
+    },
+    {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\11.jpg",
       "PackagePath": "staticwebassets\\images\\dropdown\\11.jpg"
     },
     {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\CAREERS.JPG",
+      "PackagePath": "staticwebassets\\images\\dropdown\\CAREERS.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\COLLABORATION.JPG",
+      "PackagePath": "staticwebassets\\images\\dropdown\\COLLABORATION.JPG"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\COMMUNITY.jpg",
+      "PackagePath": "staticwebassets\\images\\dropdown\\COMMUNITY.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\CONTACT US.jpg",
+      "PackagePath": "staticwebassets\\images\\dropdown\\CONTACT US.jpg"
+    },
+    {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\Cover Depan.jpg",
       "PackagePath": "staticwebassets\\images\\dropdown\\Cover Depan.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\EVENTS AND MANAGEMENTS.jpg",
+      "PackagePath": "staticwebassets\\images\\dropdown\\EVENTS AND MANAGEMENTS.jpg"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\FOTO KOPCIN-54.jpg",
@@ -787,6 +891,10 @@
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\Screenshot 2026-05-03 030332.png",
       "PackagePath": "staticwebassets\\images\\dropdown\\Screenshot 2026-05-03 030332.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\TEAM.jpg",
+      "PackagePath": "staticwebassets\\images\\dropdown\\TEAM.jpg"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\dropdown\\binus-5.JPG",
@@ -813,8 +921,8 @@
       "PackagePath": "staticwebassets\\images\\dropdown\\workshops-dropdown.jpg"
     },
     {
-      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\hand.png",
-      "PackagePath": "staticwebassets\\images\\hand.png"
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\hand-v2.png",
+      "PackagePath": "staticwebassets\\images\\hand-v2.png"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\hbii-hdi\\cover.png",

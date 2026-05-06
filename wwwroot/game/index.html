@@ -76,7 +76,7 @@
             const height = this.scale.height;
 
             heartCount = 0;
-            speed = 260;
+            speed = 130;
             gameOver = false;
             isDragging = false;
 
@@ -232,7 +232,9 @@
 
             const dt = delta / 1000;
 
-            speed += 5 * dt;
+            const speedLevel = Math.floor(this.time.now / 15000);
+            speed = 130 + (speedLevel * 25);
+            speed = Math.min(speed, 280);
 
             if (cursors.left.isDown) targetX -= 400 * dt;
             if (cursors.right.isDown) targetX += 400 * dt;

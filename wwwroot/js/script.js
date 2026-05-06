@@ -172,4 +172,31 @@ document.addEventListener("DOMContentLoaded", () => {
     initNavbar();
     initExperienceSliders();
     initTuliTalks();
-});
+    initCoffeeScroll(); });
+function initCoffeeScroll() {
+
+    const bean1 = document.querySelector(".bean-1");
+    const bean2 = document.querySelector(".bean-2");
+    const bean3 = document.querySelector(".bean-3");
+
+    if (!bean1 || !bean2 || !bean3) return;
+
+    window.addEventListener("scroll", () => {
+
+        const scroll = window.scrollY;
+
+        bean1.style.transform =
+            `translate(-120px, ${scroll * 1.2}px)
+             rotate(${scroll * 0.4}deg)`;
+
+        bean2.style.transform =
+            `translate(0px, ${scroll * 1.35}px)
+             rotate(${scroll * 0.4}deg)`;
+
+        bean3.style.transform =
+            `translate(120px, ${scroll * 1.2}px)
+             rotate(${scroll * 0.4}deg)`;
+
+    });
+
+}

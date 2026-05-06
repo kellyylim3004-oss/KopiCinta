@@ -4,53 +4,13 @@
     ViewData["Title"] = "Home page";
 }
 
-<section class="hero section">
-    <div class="container hero-grid">
-        <div class="hero-copy reveal">
-            <p class="eyebrow">Selamanya Berbagi CINTA</p>
-            <h1>More than coffee, a space for connection.</h1>
-            <p class="hero-text">
-                Kopi Cinta brings Deaf awareness, sign language learning, community stories,
-                and meaningful collaborations together through coffee, warmth, and shared experiences.
-            </p>
-
-            <div class="hero-actions">
-                <a class="btn btn-primary" asp-page="/About">Discover Our Story</a>
-                <a class="btn btn-secondary" asp-page="/Dictionary">Explore Sign Center</a>
-            </div>
-
-            <div class="hero-stats">
-                <article class="reveal">
-                    <strong>Learn</strong>
-                    <span>Sign language and Deaf awareness</span>
-                </article>
-                <article class="reveal">
-                    <strong>Connect</strong>
-                    <span>Stories, workshops, and communities</span>
-                </article>
-                <article class="reveal">
-                    <strong>Share</strong>
-                    <span>Coffee, kindness, and CINTA</span>
-                </article>
-            </div>
-        </div>
-
-        <div class="hero-visual reveal">
-            <img src="/images/HOME/FOTO KOPCIN-2.jpg" alt="Kopi Cinta coffee experience" style="width:100%; height:520px; object-fit:cover; border-radius:28px; box-shadow:0 18px 45px rgba(0,0,0,.14);">
-
-            <div class="bubble bubble-1">Coffee</div>
-            <div class="bubble bubble-2">Sign</div>
-            <div class="bubble bubble-3">Stories</div>
-            <div class="bubble bubble-4">CINTA</div>
-        </div>
-    </div>
-</section>
+<section class="kc-story-hero"> <div class="kc-scroll-stage"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/envelope.png" class="kc-envelope"> <img src="/images/HOME/envelope-closed.png" class="kc-envelope-closed"> <img src="/images/HOME/mailbox.png" class="kc-mailbox"> <img src="/images/HOME/world-map.png" class="kc-world"> </div> </section>
 
 <section class="section intro-band">
     <div class="container">
         <div class="section-head reveal">
             <p class="eyebrow">What We Do</p>
-            <h2>Small moments, bigger meaning.</h2>
+            <h2>Things we do that do things to us</h2>
             <p>
                 Through coffee, sign language, and community experiences, Kopi Cinta creates
                 simple but meaningful ways for Deaf and hearing people to meet, learn, and connect.
@@ -97,7 +57,7 @@
 
             <div class="kbi-text">
                 <p class="eyebrow">Coffee Experience</p>
-                <h3>A cup can become a bridge.</h3>
+                <h3>Coffee, Conversation, and Connection</h3>
                 <p>
                     At Kopi Cinta, coffee is not only served for taste. It becomes a way to start conversations,
                     create comfort, and introduce people to a more inclusive way of connecting.
@@ -116,7 +76,7 @@
 
             <div class="kbi-text">
                 <p class="eyebrow">Our Story</p>
-                <h3>Built from access, not charity.</h3>
+                <h3>Built from love proven through action</h3>
                 <p>
                     Kopi Cinta began from a simple belief: people with disabilities do not have different dreams,
                     they just do not always receive the same access.
@@ -134,25 +94,30 @@
     <div class="container">
         <div class="section-head reveal">
             <p class="eyebrow">Explore Kopi Cinta</p>
-            <h2>Choose where your journey begins.</h2>
+            <h2 style="white-space: nowrap;">Choose where your journey begins.</h2>
         </div>
 
         <div class="stories-layout">
             <article class="story-card large reveal">
                 <div class="story-tag">Featured</div>
-                <h3>Learn sign language in a way that feels natural.</h3>
+                <h3>Learn BISINDO sign language </h3>
                 <p>
                     Visit the Sign Center to explore sign language topics, alphabet learning,
                     and interactive features made to help more people communicate with confidence.
                 </p>
-                <a asp-page="/Dictionary" class="text-link">Go to Sign Center →</a>
+                <p class="small-note">
+                    *Every sign language is different around the world.
+                </p>
+                <a asp-page="/Dictionary" class="text-link">Dictionary →</a>
             </article>
 
             <div class="story-list">
                 <article class="story-card reveal">
                     <div class="story-tag soft">Stories</div>
-                    <h3>Meet the people behind Kopi Cinta</h3>
-                    <p>
+                    <h3>
+                        Meet the people behind <br>
+                        Kopi Cinta
+                    </h3>                    <p>
                         Read reflections from the team and discover the personal meaning behind this journey.
                     </p>
                     <a asp-page="/Team" class="text-link">Read more</a>
@@ -160,7 +125,7 @@
 
                 <article class="story-card reveal">
                     <div class="story-tag soft">Experiences</div>
-                    <h3>See our programs and events</h3>
+                    <h3>Explore our programs and events</h3>
                     <p>
                         From community outreach to university booths, each experience is made to spread awareness.
                     </p>
@@ -168,25 +133,36 @@
                 </article>
 
                 <article class="story-card reveal">
-                    <div class="story-tag soft">Have Fun</div>
-                    <h3>Play while learning</h3>
+                    <div class="story-tag soft">Game</div>
+                    <h3>Win and have fun !</h3>
                     <p>
                         Try the interactive game and collect signs while learning in a fun, memorable way.
                     </p>
-                    <a asp-page="/Game" class="text-link">Play game</a>
+                    <a asp-page="/Game" class="text-link">Kopi Cinta Runner</a>
                 </article>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section">
+<section class="section memories-section">
     <div class="container">
-        <div class="featured-grid reveal">
-            <img src="/images/HOME/FOTO KOPCIN-11.jpg" alt="Kopi Cinta barista">
-            <img src="/images/HOME/FOTO KOPCIN-31.jpg" alt="Pouring coffee">
-            <img src="/images/HOME/FOTO KOPCIN-54.jpg" alt="Kopi Cinta coffee moment">
+
+        <div class="section-head reveal">
+            <p class="eyebrow">Wall of Memories</p>
+            <h2>Moments shared through coffee, stories, and CINTA.</h2>
         </div>
+
+        <div class="memories-grid reveal">
+
+            <img src="/images/HOME/memory-1.jpg" alt="Kopi Cinta memory">
+            <img src="/images/HOME/memory-2.jpg" alt="Kopi Cinta memory">
+            <img src="/images/HOME/memory-3.jpg" alt="Kopi Cinta memory">
+            <img src="/images/HOME/memory-4.jpg" alt="Kopi Cinta memory">
+            <img src="/images/HOME/memory-5.jpg" alt="Kopi Cinta memory">
+
+        </div>
+
     </div>
 </section>
 
@@ -207,3 +183,96 @@
         </div>
     </div>
 </section>
+<style>
+    .kc-story-hero {
+        height: 260vh;
+        background: #f5f0ed;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .kc-scroll-stage {
+        position: sticky;
+        top: 72px;
+        height: calc(100vh - 72px);
+        overflow: visible;
+    }
+
+    .kc-flow-item {
+        position: absolute;
+        width: 60px;
+        z-index: 40;
+        left: 50%;
+        top: 50%;
+        transform-origin: center;
+        transition: none;
+        filter: drop-shadow(0 10px 16px rgba(0,0,0,.12));
+    }
+
+    .kc-envelope, .kc-envelope-closed {
+        position: absolute;
+        width: 500px;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%) scale(.7);
+        opacity: 0;
+        transition: none;
+        filter: drop-shadow(0 18px 30px rgba(0,0,0,.16));
+    }
+
+    .kc-envelope {
+        z-index: 20;
+    }
+
+    .kc-envelope-closed {
+        z-index: 25;
+    }
+
+    .kc-mailbox {
+        position: absolute;
+        width: 420px;
+        left: 50%;
+        top: 68%;
+        transform: translate(-50%, -50%) scale(.7);
+        opacity: 0;
+        z-index: 30;
+        transition: none;
+        filter: drop-shadow(0 18px 30px rgba(0,0,0,.16));
+    }
+
+    .kc-world {
+        position: absolute;
+        width: 420px;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%) scale(.85);
+        opacity: 0;
+        z-index: 5;
+        transition: none;
+    }
+
+    @@media (max-width:768px) {
+        .kc-story-hero {
+            height: 240vh;
+        }
+
+        .kc-flow-item {
+            width: 42px;
+        }
+
+        .kc-envelope, .kc-envelope-closed {
+            width: 300px;
+            top: 68%;
+        }
+
+        .kc-mailbox {
+            width: 260px;
+            top: 68%;
+        }
+
+        .kc-world {
+            width: 240px;
+        }
+    }
+</style>
+<script>document.addEventListener("DOMContentLoaded", () => { const hero = document.querySelector(".kc-story-hero"); const items = document.querySelectorAll(".kc-flow-item"); const envelope = document.querySelector(".kc-envelope"); const closedEnvelope = document.querySelector(".kc-envelope-closed"); const mailbox = document.querySelector(".kc-mailbox"); const world = document.querySelector(".kc-world"); const startX = [-720, -580, -430, -280, -130, 0, 130, 280, 430, 580, 720, -20]; const startY = [-260, -120, -200, 20, -180, -60, -140, 40, -170, -90, -240, 80]; const endX = [-35, -28, -22, -15, -8, 0, 8, 15, 22, 28, 35, 0]; const endY = [145, 155, 135, 165, 150, 140, 150, 165, 135, 155, 145, 175]; const rotate = [-120, 95, -80, 65, -45, 30, -30, 45, -65, 80, -95, 120]; function clamp(value, min, max) { return Math.min(Math.max(value, min), max); } function animateHero() { const rect = hero.getBoundingClientRect(); const progress = clamp(-rect.top / (rect.height - window.innerHeight), 0, 1); const envelopeIn = clamp((progress - 0.08) / 0.15, 0, 1); const beanProgress = clamp(progress / 0.50, 0, 1); const beanFade = clamp((progress - 0.50) / 0.10, 0, 1); const closedIn = clamp((progress - 0.60) / 0.10, 0, 1); const mailboxIn = clamp((progress - 0.72) / 0.10, 0, 1); const worldIn = clamp((progress - 0.84) / 0.10, 0, 1); envelope.style.opacity = envelopeIn * (1 - closedIn); envelope.style.transform = `translate(-50%, -50%) scale(${0.7 + envelopeIn * 0.3})`; items.forEach((item, i) => { const x = startX[i] + (endX[i] - startX[i]) * beanProgress; const y = startY[i] + (endY[i] - startY[i]) * beanProgress; const r = rotate[i] * (1 - beanProgress); const scale = 1 - beanProgress * 0.35; item.style.transform = `translate(${x}px, ${y}px) rotate(${r}deg) scale(${scale})`; item.style.opacity = 1 - beanFade; }); closedEnvelope.style.opacity = closedIn * (1 - mailboxIn); closedEnvelope.style.transform = `translate(-50%, -50%) scale(${0.7 + closedIn * 0.3})`; mailbox.style.opacity = mailboxIn; mailbox.style.transform = `translate(-50%, -50%) scale(${0.7 + mailboxIn * 0.25})`; world.style.opacity = worldIn; world.style.transform = `translateX(-50%) scale(${0.85 + worldIn * 0.15})`; } animateHero(); window.addEventListener("scroll", animateHero); window.addEventListener("resize", animateHero); });</script>

@@ -21,7 +21,9 @@
                 <img src="~/images/logo-kopi-cinta.png" alt="Kopi Cinta Logo" class="site-logo" />
                 <div class="brand-copy">
                     <strong>Kopi Cinta</strong>
-                    <small>Stories, signs, and shared perspectives</small>
+                    <small style="line-height:1.2;">
+                        An inclusive experience platform connecting Deaf and hearing communities
+                    </small>
                 </div>
             </a>
 
@@ -42,19 +44,19 @@
                         </a>
 
                         <a asp-page="/Team" class="dropdown-card">
-                            <div class="dropdown-img" style="background-image:url('/images/dropdown/FOTO KOPCIN-54.jpg');"></div>
+                            <div class="dropdown-img" style="background-image:url('/images/dropdown/TEAM.jpg');"></div>
                             <strong>Team</strong>
                             <span>Meet the people behind the initiative.</span>
                         </a>
 
                         <a asp-page="/Careers" class="dropdown-card">
-                            <div class="dropdown-img" style="background-image:url('/images/dropdown/hero-2.jpg');"></div>
+                            <div class="dropdown-img" style="background-image:url('/images/dropdown/CAREERS.JPG');"></div>
                             <strong>Careers</strong>
                             <span>Explore future opportunities and growth.</span>
                         </a>
 
                         <a asp-page="/Contact" class="dropdown-card">
-                            <div class="dropdown-img" style="background-image:url('/images/dropdown/hero-3.jpg');"></div>
+                            <div class="dropdown-img" style="background-image:url('/images/dropdown/CONTACT US.jpg');"></div>
                             <strong>Contact Us</strong>
                             <span>Find ways to connect and collaborate.</span>
                         </a>
@@ -75,19 +77,19 @@
                         </a>
 
                             <a asp-page="/Community" class="dropdown-card">
-                            <div class="dropdown-img" style="background-image:url('/images/dropdown/coffee blessings-2 (1).jpg');"></div>
+                            <div class="dropdown-img" style="background-image:url('/images/dropdown/COMMUNITY.jpg');"></div>
                             <strong>Community & Outreach</strong>
                                 <span>Giving back and community-based initiatives.</span>
                             </a>
 
                             <a asp-page="/Collaborations" class="dropdown-card">
-                            <div class="dropdown-img" style="background-image:url('/images/dropdown/11.jpg');"></div>
+                            <div class="dropdown-img" style="background-image:url('/images/dropdown/COLLABORATION.JPG');"></div>
                             <strong>Collaborations & Campaigns</strong>
                                 <span>Partnerships and special campaign projects.</span>
                             </a>
 
                             <a asp-page="/Events" class="dropdown-card">
-                            <div class="dropdown-img" style="background-image:url('/images/dropdown/binus-5.jpg');"></div>
+                            <div class="dropdown-img" style="background-image:url('/images/dropdown/EVENTS AND MANAGEMENTS.jpg');"></div>
                             <strong>Events & Engagements</strong>
                                 <span>University visits and public engagements.</span>
                             </a>
@@ -95,31 +97,11 @@
                     </div>
                 
 
-                <div class="nav-dropdown">
-                    <div class="dropdown-head">
-                        <button type="button" class="dropdown-link dropdown-trigger">Sign Center</button>
-                    </div>
-                    <div class="dropdown-panel dropdown-panel-grid">
-                        <a asp-page="/Dictionary" class="dropdown-card">
-                            <div class="dropdown-img" style="background-image:url('/images/dropdown/Cover Depan.jpg');"></div>
-                            <strong>Dictionary</strong>
-                            <span>Explore sign language topics through the interactive book.</span>
-                        </a>
-
-                        
-
-                        <a asp-page="/Game" class="dropdown-card">
-                            <div class="dropdown-img" style="background-image:url('/images/dropdown/Screenshot 2026-05-03 030332.png');"></div>
-                            <strong>Game</strong>
-                            <span>Learn in a fun and interactive way.</span>
-                        </a>
-
-                        
-                    </div>
-                </div>
+                <a asp-page="/Dictionary">Dictionary</a>
+                
 
                 <a asp-page="/TuliTalks">Tuli Talks</a>
-                <a asp-page="/Stories">Perspectives</a>
+                <a asp-page="/Game">Game</a>
             </nav>
         </div>
     </header>
@@ -136,13 +118,13 @@
             <div class="footer-brand">
                 <img src="~/images/logo-kopi-cinta.png"
                      class="footer-logo"
-                     style="height:28px; max-width:100px; width:auto;" />
-                <p>
-                    A warm space for stories, sign language, and shared understanding.
+                     style="height:110px !important; max-width:380px !important; width:auto !important;" />
+                <p class="footer-cta" style="margin-bottom:1rem; white-space:nowrap;">
+                    Selamanya Berbagi Cinta
                 </p>
 
                 <a href="https://instagram.com/_kopicinta_" target="_blank" class="footer-cta">
-                    Connect on Instagram →
+                    Connect on Instagram 
                 </a>
             </div>
 
@@ -152,7 +134,7 @@
                 <a asp-page="/Index">Home</a>
                 <a asp-page="/Stories">Stories</a>
                 <a asp-page="/Projects">Programs</a>
-                <a asp-page="/Dictionary">Sign Center</a>
+                <a asp-page="/Dictionary">Dictionary</a>
                 <a asp-page="/Game">Game</a>
             </div>
 
