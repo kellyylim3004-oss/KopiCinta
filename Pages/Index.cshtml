@@ -4,32 +4,53 @@
     ViewData["Title"] = "Home page";
 }
 
-<section class="kc-story-hero"> 
-    <div class="kc-scroll-stage"> 
+<section class="kc-story-hero">
+    <div class="kc-scroll-stage">
+
+        <div class="kc-big-message">
+            <h1>
+                <span class="script-word">Sharing</span>
+
+                <span class="block-word">
+                    DEAF
+                </span>
+
+                <span class="script-word awareness-word">
+                    Awareness
+                </span>
+            </h1>
+
+            <p>
+                one person, one experience,<br>
+                and one community at a time.
+            </p>
+        </div>
+
         <img src="/images/HOME/coffee-bean.png" class="kc-flow-item bean">
+        <img src="/images/HOME/logo-kopi-cinta.png" class="kc-flow-item logo-kc">
         <img src="/images/HOME/normal-person1.png" class="kc-flow-item normal-person">
         <img src="/images/HOME/hand-v2.png" class="kc-flow-item hand">
-        <img src="/images/HOME/cup.png" class="kc-flow-item cup">
 
+        <img src="/images/HOME/cup.png" class="kc-flow-item cup">
         <img src="/images/HOME/sign-person1.png" class="kc-flow-item sign-person">
+        <img src="/images/HOME/logo-kopi-cinta.png" class="kc-flow-item logo-kc">
         <img src="/images/HOME/coffee-bean.png" class="kc-flow-item bean">
+
         <img src="/images/HOME/normal-person2.png" class="kc-flow-item normal-person">
         <img src="/images/HOME/cup.png" class="kc-flow-item cup">
-
         <img src="/images/HOME/hand-v2.png" class="kc-flow-item hand">
+        <img src="/images/HOME/logo-kopi-cinta.png" class="kc-flow-item logo-kc">
+
         <img src="/images/HOME/sign-person2.png" class="kc-flow-item sign-person">
         <img src="/images/HOME/normal-person3.png" class="kc-flow-item normal-person">
         <img src="/images/HOME/sign-person3.png" class="kc-flow-item sign-person">
 
         <img src="/images/HOME/envelope.png" class="kc-envelope">
-        <img src="/images/HOME/envelope-closed.png" class="kc-envelope-closed">
+        <img src="/images/HOME/envelope-closed1.png" class="kc-envelope-closed">
         <img src="/images/HOME/mailbox.png" class="kc-mailbox">
-
-        
-
         <img src="/images/HOME/world-map.png" class="kc-world">
-    </div> 
-    </section>
+    </div>
+</section>
     
 <section class="section intro-band home-things-section">
     <div class="container">
@@ -214,96 +235,200 @@
 </section>
 <style>
     .kc-story-hero {
-    height: 760vh !important;
-    background: #f5f0ed !important;
-    overflow: visible !important;
-    position: relative !important;
-    z-index: 1 !important;
-    padding-bottom:300px;    
-}
+        height: 760vh !important;
+        background: #f5f0ed !important;
+        overflow: visible !important;
+        position: relative !important;
+        z-index: 1 !important;
+        padding-bottom: 600px;
+    }
 
     .kc-scroll-stage {
         position: sticky !important;
         top: 0 !important;
         height: 135vh !important;
         overflow: visible !important;
-        padding-bottom: 300px;
+        padding-bottom: 600px;
     }
-.kc-flow-item {
+
+    .kc-big-message {
     position: absolute !important;
-    left: 50% !important;
-    top: 38% !important;
-    z-index: 160 !important;
-    opacity: 1;
-    transform-origin: center !important;
-    transition: none !important;
-    filter: drop-shadow(0 10px 16px rgba(0,0,0,.12)) !important;
-}
 
-.kc-flow-item.bean {
-    width: 125px !important;
-}
+    top: 6% !important;
+    left: 5% !important;
 
-.kc-flow-item.hand {
-    width: 145px !important;
-}
+    z-index: 20 !important;
 
-.kc-flow-item.cup {
-    width: 165px !important;
-}
-
-.kc-flow-item.normal-person,
-.kc-flow-item.sign-person {
-    width: 220px !important;
-}
-
-.kc-envelope,
-.kc-envelope-closed,
-.kc-mailbox,
-.kc-world {
-    position: absolute !important;
-    display: block !important;
     pointer-events: none !important;
-    transition: none !important;
+
+    text-align: left !important;
+
+    opacity: 1 !important;
+
+    transform: none !important;
 }
 
-.kc-envelope,
-.kc-envelope-closed {
-    width: 420px !important;
-    left: 50% !important;
-    top: 58% !important;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(.78);
-    filter: drop-shadow(0 18px 30px rgba(0,0,0,.16)) !important;
+.kc-big-message h1 {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    line-height: .85;
 }
 
-.kc-envelope {
-    z-index: 100 !important;
+.kc-big-message .script-word {
+    font-family: "Pacifico", cursive;
+
+    font-size: clamp(3.5rem, 7vw, 6rem);
+
+    color: var(--red);
+
+    font-weight: 400;
+
+    letter-spacing: .5px;
+
+    text-shadow:
+        2px 2px 0 rgba(42,35,33,.12);
 }
 
-.kc-envelope-closed {
-    z-index: 150 !important;
+.kc-big-message .block-word {
+    font-family: "Raleway", sans-serif;
+
+    font-size: clamp(4rem, 8vw, 7rem);
+
+    font-weight: 800;
+
+    letter-spacing: -4px;
+
+    color: var(--red);
+
+    text-shadow:
+        3px 3px 0 rgba(42,35,33,.18);
 }
 
-.kc-mailbox {
-    width: 280px !important;
-    left: 50% !important;
-    top: 72% !important;
-    opacity: 0;
-    z-index: 170 !important;
-    transform: translate(-50%, -50%) scale(.78);
-    filter: drop-shadow(0 18px 30px rgba(0,0,0,.18)) !important;
+.kc-big-message .awareness-word {
+    margin-top: -.2rem;
 }
 
-.kc-world {
-    width: 580px !important;
-    left: 50% !important;
-    top: 108% !important;
-    opacity: 0;
-    z-index: 90 !important;
-    transform: translate(-50%, -50%) scale(.85);
+.kc-big-message p {
+    margin-top: 1rem;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+
+    color: #7b5b55;
+
+    font-weight: 500;
+
+    line-height: 1.45;
+
+    max-width: 420px;
 }
 
+@@media (max-width:768px) {
+
+    .kc-big-message {
+        top: 9% !important;
+        left: 6% !important;
+    }
+
+    .kc-big-message .script-word {
+        font-size: clamp(2.6rem, 11vw, 4rem);
+    }
+
+    .kc-big-message .block-word {
+        font-size: clamp(3rem, 13vw, 5rem);
+
+        letter-spacing: -2px;
+    }
+
+    .kc-big-message p {
+        font-size: .95rem;
+
+        max-width: 260px;
+    }
+}
+
+    .kc-flow-item {
+        position: absolute !important;
+        left: 50% !important;
+        top: 38% !important;
+        z-index: 160 !important;
+        opacity: 1;
+        transform-origin: center !important;
+        transition: none !important;
+        filter: drop-shadow(0 10px 16px rgba(0,0,0,.12)) !important;
+    }
+
+        .kc-flow-item.bean {
+            width: 125px !important;
+        }
+
+        .kc-flow-item.hand {
+            width: 145px !important;
+        }
+
+        .kc-flow-item.cup {
+            width: 165px !important;
+        }
+
+        .kc-flow-item.normal-person,
+        .kc-flow-item.sign-person {
+            width: 290px !important;
+        }
+
+        .kc-flow-item.logo-kc {
+            width: 170px !important;
+        }
+
+    .kc-envelope,
+    .kc-envelope-closed,
+    .kc-mailbox,
+    .kc-world {
+        position: absolute !important;
+        display: block !important;
+        pointer-events: none !important;
+        transition: none !important;
+    }
+
+    .kc-envelope,
+    .kc-envelope-closed {
+        width: 560px !important;
+        left: 50% !important;
+        top: 58% !important;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.78);
+        filter: drop-shadow(0 18px 30px rgba(0,0,0,.16)) !important;
+    }
+
+    .kc-envelope {
+        z-index: 100 !important;
+    }
+
+    .kc-envelope-closed {
+        z-index: 150 !important;
+    }
+
+    .kc-mailbox {
+        width: 280px !important;
+        left: 50% !important;
+        top: 72% !important;
+        opacity: 0;
+        z-index: 170 !important;
+        transform: translate(-50%, -50%) scale(.78);
+        filter: drop-shadow(0 18px 30px rgba(0,0,0,.18)) !important;
+    }
+
+    .kc-world {
+        width: 1050px !important;
+        left: 50% !important;
+        top: 112% !important;
+        opacity: 0;
+        z-index: 90 !important;
+        transform: translate(-50%, -50%) scale(.85);
+    }
 
     .home-things-section {
         margin-top: -220px !important;
@@ -312,94 +437,60 @@
         z-index: 5 !important;
     }
 
+    @@media (max-width:768px) {
+        .kc-big-message {
+            top: 10% !important;
+            left: 6% !important;
+        }
 
-@@media (max-width:768px) {
+            .kc-big-message h1 {
+                font-size: clamp(2.8rem, 13vw, 5rem);
+                letter-spacing: -2px;
+                line-height: .9;
+            }
 
-    .kc-flow-item.bean {
-        width: 58px !important;
+            .kc-big-message p {
+                font-size: .95rem;
+                max-width: 260px;
+            }
+
+        .kc-flow-item.bean {
+            width: 58px !important;
+        }
+
+        .kc-flow-item.hand {
+            width: 68px !important;
+        }
+
+        .kc-flow-item.cup {
+            width: 78px !important;
+        }
+
+        .kc-flow-item.normal-person,
+        .kc-flow-item.sign-person {
+            width: 125px !important;
+        }
+
+        .kc-flow-item.logo-kc {
+            width: 78px !important;
+        }
+
+        .kc-envelope,
+        .kc-envelope-closed {
+            width: 280px !important;
+            top: 56% !important;
+        }
+
+        .kc-mailbox {
+            width: 200px !important;
+            top: 72% !important;
+        }
+
+        .kc-world {
+            width: 330px !important;
+            top: 112% !important;
+        }
     }
-
-    .kc-flow-item.hand {
-        width: 68px !important;
-    }
-
-    .kc-flow-item.cup {
-        width: 78px !important;
-    }
-
-    .kc-flow-item.normal-person,
-    .kc-flow-item.sign-person {
-        width: 96px !important;
-    }
-
-    .kc-envelope,
-    .kc-envelope-closed {
-        width: 280px !important;
-        top: 56% !important;
-    }
-
-    .kc-mailbox {
-        width: 200px !important;
-        top: 72% !important;
-    }
-
-    .kc-world {
-        width: 330px !important;
-        top: 112% !important;
-    }
-
-    .kc-map-arrows {
-        width: 330px !important;
-        height: 210px !important;
-        top: 80% !important;
-    }
-
-    .kc-map-arrow {
-        border-top-width: 2px;
-    }
-
-    .kc-map-arrow::after {
-        width: 9px;
-        height: 9px;
-        border-right-width: 2px;
-        border-bottom-width: 2px;
-    }
-
-    .arrow-1 {
-        width: 125px;
-        height: 85px;
-        left: 25px;
-        top: 45px;
-    }
-
-    .arrow-2 {
-        width: 100px;
-        height: 85px;
-        left: 105px;
-        top: 60px;
-    }
-
-    .arrow-3 {
-        width: 85px;
-        height: 100px;
-        left: 145px;
-        top: 70px;
-    }
-
-    .arrow-4 {
-        width: 100px;
-        height: 85px;
-        left: 200px;
-        top: 60px;
-    }
-
-    .arrow-5 {
-        width: 125px;
-        height: 85px;
-        left: 220px;
-        top: 45px;
-    }
-}
 </style>
 
 <script>
@@ -412,23 +503,42 @@
         const closedEnvelope = document.querySelector(".kc-envelope-closed");
         const mailbox = document.querySelector(".kc-mailbox");
         const world = document.querySelector(".kc-world");
+        const bigMessage = document.querySelector(".kc-big-message");
 
         const startX = [
-            -760, -620, -500, -360,
-            -220, -80, 80, 220,
-            360, 500, 640, 760
+            -520, -300, -120, 180,
+            420, -640, -380, -40,
+            260, 560, -500, -180,
+            120, 380, 700
         ];
 
         const startY = [
-            -170, 90, -120, 140,
-            -60, 110, -90, 150,
-            -40, 120, -100, 70
+            -260, -120, -320, -180,
+            -40, 120, 260, 180,
+            320, 140, -60, 80,
+            -140, 40, -220
         ];
 
-        const endX = [-260, -230, -205, -178, -150, -222, -195, -165, -138, -112, -88, -185];
-        const endY = [-95, -82, -112, -88, -105, -58, -70, -62, -78, -92, -66, -48];
+        const endX = [
+            -230, -190, -155, -120,
+            -85, -205, -170, -135,
+            -100, -65, -30, -175,
+            -140, -105, -55
+        ];
 
-        const rotate = [-14, 9, -12, 10, -7, 13, -9, 7, -10, 12, -13, 5];
+        const endY = [
+            -72, -54, -84, -62,
+            -78, -30, -44, -34,
+            -48, -64, -38, -14,
+            -56, -40, -70
+        ];
+
+        const rotate = [
+            -14, 9, -12, 10,
+            -7, 13, -9, 7,
+            -10, 12, -13, 5,
+            -8, 11, -6
+        ];
 
         function clamp(v, min, max) {
             return Math.min(Math.max(v, min), max);
@@ -447,12 +557,17 @@
             const itemMove = clamp(progress / 0.30, 0, 1);
             const itemFade = clamp((progress - 0.37) / 0.10, 0, 1);
 
+            const messageOpacity = 1;
+
             const openEnvelopeOpacity = fadeInOut(progress, 0.06, 0.16, 0.42, 0.50);
             const closedOpacity = fadeInOut(progress, 0.48, 0.58, 0.66, 0.74);
             const closedDrop = clamp((progress - 0.55) / 0.14, 0, 1);
 
             const mailboxOpacity = clamp((progress - 0.66) / 0.10, 0, 1);
             const worldOpacity = clamp((progress - 0.76) / 0.12, 0, 1);
+
+            bigMessage.style.opacity = messageOpacity;
+            bigMessage.style.transform = `translateY(0)`;
 
             envelope.style.opacity = openEnvelopeOpacity;
             envelope.style.transform =

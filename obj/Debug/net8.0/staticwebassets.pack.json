@@ -361,8 +361,8 @@
       "PackagePath": "staticwebassets\\images\\HOME\\cup.png"
     },
     {
-      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\envelope-closed.png",
-      "PackagePath": "staticwebassets\\images\\HOME\\envelope-closed.png"
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\envelope-closed1.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\envelope-closed1.png"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\envelope.png",
@@ -371,6 +371,10 @@
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\hand-v2.png",
       "PackagePath": "staticwebassets\\images\\HOME\\hand-v2.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\logo-kopi-cinta.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\logo-kopi-cinta.png"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\mailbox.png",

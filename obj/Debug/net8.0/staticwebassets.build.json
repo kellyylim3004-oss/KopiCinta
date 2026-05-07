@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L2cbPi8+AL+pJGLyrQ1R0gbXJvLX64xyFE1/o4eVBAk=",
+  "Hash": "Y7CRA7en1S1LXkxU3uESB4m+14SX97S1UHc/01enwT4=",
   "Source": "KopiCinta",
   "BasePath": "_content/KopiCinta",
   "Mode": "Default",
@@ -3114,12 +3114,12 @@
       "OriginalItemSpec": "wwwroot\\images\\HOME\\envelope.png"
     },
     {
-      "Identity": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\envelope-closed.png",
+      "Identity": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\envelope-closed1.png",
       "SourceId": "KopiCinta",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\",
       "BasePath": "_content/KopiCinta",
-      "RelativePath": "images/HOME/envelope-closed.png",
+      "RelativePath": "images/HOME/envelope-closed1.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3130,7 +3130,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\HOME\\envelope-closed.png"
+      "OriginalItemSpec": "wwwroot\\images\\HOME\\envelope-closed1.png"
     },
     {
       "Identity": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\FOTO KOPCIN-11.jpg",
@@ -3302,6 +3302,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\HOME\\hand-v2.png"
+    },
+    {
+      "Identity": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\logo-kopi-cinta.png",
+      "SourceId": "KopiCinta",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\",
+      "BasePath": "_content/KopiCinta",
+      "RelativePath": "images/HOME/logo-kopi-cinta.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\HOME\\logo-kopi-cinta.png"
     },
     {
       "Identity": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\mailbox.png",

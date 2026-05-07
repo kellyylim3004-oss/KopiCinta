@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\KOPI CINTA\\KopiCinta\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\wwwroot\\game\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:wwwroot\\game\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDF6415B-6ECD-4B68-934F-22E2B4C9AE89}|KopiCinta.csproj|d:\\kopi cinta\\kopicinta\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
@@ -83,13 +83,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "style.css",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
               "ToolTip": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\css\\style.css",
               "RelativeToolTip": "wwwroot\\css\\style.css",
-              "ViewState": "AQIAAF0MAAAAAAAAAAAAAGMMAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEsNAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-05-02T11:10:30.528Z",
               "IsPinned": true,
@@ -146,13 +146,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
               "ToolTip": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Index.cshtml",
               "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAOUAAAAZAAAA",
+              "ViewState": "AQIAAP8BAAAAAAAAAAAAAAQCAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-02T20:41:11.262Z",
               "EditorCaption": ""
@@ -171,13 +171,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\KOPI CINTA\\KopiCinta\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAAAKEAAAAHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-02T12:32:00.269Z",
               "EditorCaption": ""
@@ -232,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "index.html",
               "DocumentMoniker": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\game\\index.html",
               "RelativeDocumentMoniker": "wwwroot\\game\\index.html",
@@ -240,8 +240,7 @@
               "RelativeToolTip": "wwwroot\\game\\index.html",
               "ViewState": "AQIAAPcBAAAAAAAAAAAgwAoCAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-04-24T12:13:04.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T12:13:04.22Z"
             }
           ]
         }
