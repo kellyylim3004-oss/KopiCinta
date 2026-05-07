@@ -59,7 +59,9 @@
         let gameOver = false;
         let heartText;
         let targetX;
-        let isDragging = false;
+        let isDragging = false; 
+        let lastObstacleX = null;
+        let lastHeartX = null;
 
         if (window.kopiCintaRunnerGame) {
             window.kopiCintaRunnerGame.destroy(true);
@@ -120,8 +122,13 @@
 
                 const grass = this.add.ellipse(x, y, 10, 6, 0x7fbf5b, 0.8);
             }
-            this.roadTopWidth = width * 0.24;
-            this.roadBottomWidth = width * 0.70;
+            if (width < 768) {
+                this.roadTopWidth = width * 0.42;
+                this.roadBottomWidth = width * 0.95;
+            } else {
+                this.roadTopWidth = width * 0.24;
+                this.roadBottomWidth = width * 0.70;
+            }
 
             const g = this.add.graphics();
 
@@ -186,8 +193,8 @@
             }).setDepth(50)
                 .setOrigin(0.5, 0)    ;
 
-            this.time.addEvent({
-                delay: 900,
+            this.obstacleTimer = this.time.addEvent({
+                delay: 1500,
                 callback: spawnObstacle,
                 callbackScope: this,
                 loop: true
@@ -198,7 +205,7 @@
             }
 
             this.heartTimer = this.time.addEvent({
-                delay: 700,
+                delay: 1200,
                 callback: spawnHeart,
                 callbackScope: this,
                 loop: true
@@ -231,16 +238,29 @@
             if (gameOver) return;
 
             const dt = delta / 1000;
+            const width = this.scale.width;
 
-            const speedLevel = Math.floor(this.time.now / 15000);
-            speed = 130 + (speedLevel * 25);
-            speed = Math.min(speed, 280);
+            const elapsed = this.time.now;
+
+            /* starts slow, gets faster every 12 seconds */
+            const speedLevel = Math.floor(elapsed / 12000);
+            speed = 120 + (speedLevel * 22);
+            speed = Math.min(speed, 330);
+
+            /* spawn starts less frequent, then gets faster */
+            if (this.obstacleTimer) {
+                this.obstacleTimer.delay = Math.max(650, 1500 - speedLevel * 120);
+            }
+
+            if (this.heartTimer) {
+                this.heartTimer.delay = Math.max(550, 1200 - speedLevel * 90);
+            }
 
             if (cursors.left.isDown) targetX -= 400 * dt;
             if (cursors.right.isDown) targetX += 400 * dt;
 
-            const leftLimit = this.scale.width * 0.23;
-            const rightLimit = this.scale.width * 0.77;
+            const leftLimit = this.scale.width * 0.14;
+            const rightLimit = this.scale.width * 0.86;
             targetX = Phaser.Math.Clamp(targetX, leftLimit, rightLimit);
 
             playerHitbox.x = Phaser.Math.Linear(playerHitbox.x, targetX, 0.2);
@@ -301,8 +321,9 @@
                 obstacle.y += speed * dt;
 
                 const progress = Phaser.Math.Clamp(obstacle.y / this.scale.height, 0, 1);
-                const scale = Phaser.Math.Linear(0.05, 0.12, progress);
-
+                const scale = width < 768
+                    ? Phaser.Math.Linear(0.025, 0.075, progress)
+                    : Phaser.Math.Linear(0.05, 0.12, progress);
                 const center = this.scale.width / 2;
                 const spread = Phaser.Math.Linear(0.25, 1.0, progress);
 
@@ -328,8 +349,9 @@
                 const progress = Phaser.Math.Clamp(heart.y / this.scale.height, 0, 1);
 
                 // smoother scaling
-                const scale = Phaser.Math.Linear(0.05, 0.12, progress);
-
+                const scale = width < 768
+                    ? Phaser.Math.Linear(0.025, 0.075, progress)
+                    : Phaser.Math.Linear(0.05, 0.12, progress);
                 // 🔥 FIX: smooth X movement instead of snapping
                 const center = this.scale.width / 2;
                 const spread = Phaser.Math.Linear(0.25, 1.0, progress);
@@ -437,15 +459,26 @@
 
             const width = this.scale.width;
 
-            const topLeft = width / 2 - width * 0.12;
-            const topRight = width / 2 + width * 0.12;
+            const roadWidth = width < 768
+                ? width * 0.78
+                : width * 0.42;
 
-            const x = Phaser.Math.Between(topLeft, topRight);
+            const topLeft = width / 2 - roadWidth / 2;
+            const topRight = width / 2 + roadWidth / 2;
 
+            let x;
+            do {
+                x = Phaser.Math.Between(topLeft, topRight);
+            } while (
+                (lastHeartX !== null && Math.abs(x - lastHeartX) < (width < 768 ? width * 0.18 : width * 0.08)
+            ));
+
+            lastObstacleX = x;
             // ✅ NEW IMAGE CUP
             const obstacle = this.physics.add.image(x, -60, "cup");
 
-            obstacle.setScale(0.05);
+            const obstacleScale = width < 768 ? 0.022 : 0.035;
+            obstacle.setScale(obstacleScale);
             obstacle.setDepth(20);
             obstacle.setOrigin(0.5);
 
@@ -470,14 +503,25 @@
 
             const width = this.scale.width;
 
-            const topLeft = width / 2 - width * 0.12;
-            const topRight = width / 2 + width * 0.12;
+            const roadWidth = width < 768
+                ? width * 0.78
+                : width * 0.42;
 
-            const x = Phaser.Math.Between(topLeft, topRight);
+            const topLeft = width / 2 - roadWidth / 2;
+            const topRight = width / 2 + roadWidth / 2;
 
+            let x;
+            do {
+                x = Phaser.Math.Between(topLeft, topRight);
+            } while (
+                (lastObstacleX !== null && Math.abs(x - lastObstacleX) < (width < 768 ? width * 0.18 : width * 0.08)
+            ));
+
+            lastHeartX = x;
             const hand = this.physics.add.image(x, -40, "hand");
 
-            hand.setScale(0.05);
+            const heartScale = width < 768 ? 0.028 : 0.05;
+            hand.setScale(heartScale);
             hand.setDepth(30);
             hand.setOrigin(0.5);
 

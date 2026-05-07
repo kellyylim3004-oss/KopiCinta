@@ -357,12 +357,20 @@
       "PackagePath": "staticwebassets\\images\\HOME\\coffee-machine.png"
     },
     {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\cup.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\cup.png"
+    },
+    {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\envelope-closed.png",
       "PackagePath": "staticwebassets\\images\\HOME\\envelope-closed.png"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\envelope.png",
       "PackagePath": "staticwebassets\\images\\HOME\\envelope.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\hand-v2.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\hand-v2.png"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\mailbox.png",
@@ -387,6 +395,18 @@
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\memory-5.jpg",
       "PackagePath": "staticwebassets\\images\\HOME\\memory-5.jpg"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\normal-person1.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\normal-person1.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\normal-person2.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\normal-person2.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\normal-person3.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\normal-person3.png"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-1.png",
@@ -423,6 +443,18 @@
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-9.png",
       "PackagePath": "staticwebassets\\images\\HOME\\sign-9.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-person1.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\sign-person1.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-person2.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\sign-person2.png"
+    },
+    {
+      "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\sign-person3.png",
+      "PackagePath": "staticwebassets\\images\\HOME\\sign-person3.png"
     },
     {
       "Id": "D:\\KOPI CINTA\\KopiCinta\\wwwroot\\images\\HOME\\world-map.png",

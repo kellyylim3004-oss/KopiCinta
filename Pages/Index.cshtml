@@ -4,13 +4,40 @@
     ViewData["Title"] = "Home page";
 }
 
-<section class="kc-story-hero"> <div class="kc-scroll-stage"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/coffee-bean.png" class="kc-flow-item"> <img src="/images/HOME/envelope.png" class="kc-envelope"> <img src="/images/HOME/envelope-closed.png" class="kc-envelope-closed"> <img src="/images/HOME/mailbox.png" class="kc-mailbox"> <img src="/images/HOME/world-map.png" class="kc-world"> </div> </section>
+<section class="kc-story-hero"> 
+    <div class="kc-scroll-stage"> 
+        <img src="/images/HOME/coffee-bean.png" class="kc-flow-item bean">
+        <img src="/images/HOME/normal-person1.png" class="kc-flow-item normal-person">
+        <img src="/images/HOME/hand-v2.png" class="kc-flow-item hand">
+        <img src="/images/HOME/cup.png" class="kc-flow-item cup">
 
-<section class="section intro-band">
+        <img src="/images/HOME/sign-person1.png" class="kc-flow-item sign-person">
+        <img src="/images/HOME/coffee-bean.png" class="kc-flow-item bean">
+        <img src="/images/HOME/normal-person2.png" class="kc-flow-item normal-person">
+        <img src="/images/HOME/cup.png" class="kc-flow-item cup">
+
+        <img src="/images/HOME/hand-v2.png" class="kc-flow-item hand">
+        <img src="/images/HOME/sign-person2.png" class="kc-flow-item sign-person">
+        <img src="/images/HOME/normal-person3.png" class="kc-flow-item normal-person">
+        <img src="/images/HOME/sign-person3.png" class="kc-flow-item sign-person">
+
+        <img src="/images/HOME/envelope.png" class="kc-envelope">
+        <img src="/images/HOME/envelope-closed.png" class="kc-envelope-closed">
+        <img src="/images/HOME/mailbox.png" class="kc-mailbox">
+
+        
+
+        <img src="/images/HOME/world-map.png" class="kc-world">
+    </div> 
+    </section>
+    
+<section class="section intro-band home-things-section">
     <div class="container">
         <div class="section-head reveal">
             <p class="eyebrow">What We Do</p>
-            <h2>Things we do that do things to us</h2>
+            <h2 class="desktop-one-line">
+                Things we do that do things to us
+            </h2>
             <p>
                 Through coffee, sign language, and community experiences, Kopi Cinta creates
                 simple but meaningful ways for Deaf and hearing people to meet, learn, and connect.
@@ -94,7 +121,9 @@
     <div class="container">
         <div class="section-head reveal">
             <p class="eyebrow">Explore Kopi Cinta</p>
-            <h2 style="white-space: nowrap;">Choose where your journey begins.</h2>
+            <h2 class="desktop-one-line">
+                Choose where your journey begins.
+            </h2>
         </div>
 
         <div class="stories-layout">
@@ -185,94 +214,275 @@
 </section>
 <style>
     .kc-story-hero {
-        height: 260vh;
-        background: #f5f0ed;
-        overflow: hidden;
-        position: relative;
-    }
+    height: 760vh !important;
+    background: #f5f0ed !important;
+    overflow: visible !important;
+    position: relative !important;
+    z-index: 1 !important;
+    padding-bottom:300px;    
+}
 
     .kc-scroll-stage {
-        position: sticky;
-        top: 72px;
-        height: calc(100vh - 72px);
-        overflow: visible;
+        position: sticky !important;
+        top: 0 !important;
+        height: 135vh !important;
+        overflow: visible !important;
+        padding-bottom: 300px;
+    }
+.kc-flow-item {
+    position: absolute !important;
+    left: 50% !important;
+    top: 38% !important;
+    z-index: 160 !important;
+    opacity: 1;
+    transform-origin: center !important;
+    transition: none !important;
+    filter: drop-shadow(0 10px 16px rgba(0,0,0,.12)) !important;
+}
+
+.kc-flow-item.bean {
+    width: 125px !important;
+}
+
+.kc-flow-item.hand {
+    width: 145px !important;
+}
+
+.kc-flow-item.cup {
+    width: 165px !important;
+}
+
+.kc-flow-item.normal-person,
+.kc-flow-item.sign-person {
+    width: 220px !important;
+}
+
+.kc-envelope,
+.kc-envelope-closed,
+.kc-mailbox,
+.kc-world {
+    position: absolute !important;
+    display: block !important;
+    pointer-events: none !important;
+    transition: none !important;
+}
+
+.kc-envelope,
+.kc-envelope-closed {
+    width: 420px !important;
+    left: 50% !important;
+    top: 58% !important;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.78);
+    filter: drop-shadow(0 18px 30px rgba(0,0,0,.16)) !important;
+}
+
+.kc-envelope {
+    z-index: 100 !important;
+}
+
+.kc-envelope-closed {
+    z-index: 150 !important;
+}
+
+.kc-mailbox {
+    width: 280px !important;
+    left: 50% !important;
+    top: 72% !important;
+    opacity: 0;
+    z-index: 170 !important;
+    transform: translate(-50%, -50%) scale(.78);
+    filter: drop-shadow(0 18px 30px rgba(0,0,0,.18)) !important;
+}
+
+.kc-world {
+    width: 580px !important;
+    left: 50% !important;
+    top: 108% !important;
+    opacity: 0;
+    z-index: 90 !important;
+    transform: translate(-50%, -50%) scale(.85);
+}
+
+
+    .home-things-section {
+        margin-top: -220px !important;
+        padding-top: 260px !important;
+        position: relative !important;
+        z-index: 5 !important;
     }
 
-    .kc-flow-item {
-        position: absolute;
-        width: 60px;
-        z-index: 40;
-        left: 50%;
-        top: 50%;
-        transform-origin: center;
-        transition: none;
-        filter: drop-shadow(0 10px 16px rgba(0,0,0,.12));
+
+@@media (max-width:768px) {
+
+    .kc-flow-item.bean {
+        width: 58px !important;
     }
 
-    .kc-envelope, .kc-envelope-closed {
-        position: absolute;
-        width: 500px;
-        left: 50%;
-        top: 70%;
-        transform: translate(-50%, -50%) scale(.7);
-        opacity: 0;
-        transition: none;
-        filter: drop-shadow(0 18px 30px rgba(0,0,0,.16));
+    .kc-flow-item.hand {
+        width: 68px !important;
     }
 
-    .kc-envelope {
-        z-index: 20;
+    .kc-flow-item.cup {
+        width: 78px !important;
     }
 
+    .kc-flow-item.normal-person,
+    .kc-flow-item.sign-person {
+        width: 96px !important;
+    }
+
+    .kc-envelope,
     .kc-envelope-closed {
-        z-index: 25;
+        width: 280px !important;
+        top: 56% !important;
     }
 
     .kc-mailbox {
-        position: absolute;
-        width: 420px;
-        left: 50%;
-        top: 68%;
-        transform: translate(-50%, -50%) scale(.7);
-        opacity: 0;
-        z-index: 30;
-        transition: none;
-        filter: drop-shadow(0 18px 30px rgba(0,0,0,.16));
+        width: 200px !important;
+        top: 72% !important;
     }
 
     .kc-world {
-        position: absolute;
-        width: 420px;
-        left: 50%;
-        bottom: 20px;
-        transform: translateX(-50%) scale(.85);
-        opacity: 0;
-        z-index: 5;
-        transition: none;
+        width: 330px !important;
+        top: 112% !important;
     }
 
-    @@media (max-width:768px) {
-        .kc-story-hero {
-            height: 240vh;
-        }
-
-        .kc-flow-item {
-            width: 42px;
-        }
-
-        .kc-envelope, .kc-envelope-closed {
-            width: 300px;
-            top: 68%;
-        }
-
-        .kc-mailbox {
-            width: 260px;
-            top: 68%;
-        }
-
-        .kc-world {
-            width: 240px;
-        }
+    .kc-map-arrows {
+        width: 330px !important;
+        height: 210px !important;
+        top: 80% !important;
     }
+
+    .kc-map-arrow {
+        border-top-width: 2px;
+    }
+
+    .kc-map-arrow::after {
+        width: 9px;
+        height: 9px;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+    }
+
+    .arrow-1 {
+        width: 125px;
+        height: 85px;
+        left: 25px;
+        top: 45px;
+    }
+
+    .arrow-2 {
+        width: 100px;
+        height: 85px;
+        left: 105px;
+        top: 60px;
+    }
+
+    .arrow-3 {
+        width: 85px;
+        height: 100px;
+        left: 145px;
+        top: 70px;
+    }
+
+    .arrow-4 {
+        width: 100px;
+        height: 85px;
+        left: 200px;
+        top: 60px;
+    }
+
+    .arrow-5 {
+        width: 125px;
+        height: 85px;
+        left: 220px;
+        top: 45px;
+    }
+}
 </style>
-<script>document.addEventListener("DOMContentLoaded", () => { const hero = document.querySelector(".kc-story-hero"); const items = document.querySelectorAll(".kc-flow-item"); const envelope = document.querySelector(".kc-envelope"); const closedEnvelope = document.querySelector(".kc-envelope-closed"); const mailbox = document.querySelector(".kc-mailbox"); const world = document.querySelector(".kc-world"); const startX = [-720, -580, -430, -280, -130, 0, 130, 280, 430, 580, 720, -20]; const startY = [-260, -120, -200, 20, -180, -60, -140, 40, -170, -90, -240, 80]; const endX = [-35, -28, -22, -15, -8, 0, 8, 15, 22, 28, 35, 0]; const endY = [145, 155, 135, 165, 150, 140, 150, 165, 135, 155, 145, 175]; const rotate = [-120, 95, -80, 65, -45, 30, -30, 45, -65, 80, -95, 120]; function clamp(value, min, max) { return Math.min(Math.max(value, min), max); } function animateHero() { const rect = hero.getBoundingClientRect(); const progress = clamp(-rect.top / (rect.height - window.innerHeight), 0, 1); const envelopeIn = clamp((progress - 0.08) / 0.15, 0, 1); const beanProgress = clamp(progress / 0.50, 0, 1); const beanFade = clamp((progress - 0.50) / 0.10, 0, 1); const closedIn = clamp((progress - 0.60) / 0.10, 0, 1); const mailboxIn = clamp((progress - 0.72) / 0.10, 0, 1); const worldIn = clamp((progress - 0.84) / 0.10, 0, 1); envelope.style.opacity = envelopeIn * (1 - closedIn); envelope.style.transform = `translate(-50%, -50%) scale(${0.7 + envelopeIn * 0.3})`; items.forEach((item, i) => { const x = startX[i] + (endX[i] - startX[i]) * beanProgress; const y = startY[i] + (endY[i] - startY[i]) * beanProgress; const r = rotate[i] * (1 - beanProgress); const scale = 1 - beanProgress * 0.35; item.style.transform = `translate(${x}px, ${y}px) rotate(${r}deg) scale(${scale})`; item.style.opacity = 1 - beanFade; }); closedEnvelope.style.opacity = closedIn * (1 - mailboxIn); closedEnvelope.style.transform = `translate(-50%, -50%) scale(${0.7 + closedIn * 0.3})`; mailbox.style.opacity = mailboxIn; mailbox.style.transform = `translate(-50%, -50%) scale(${0.7 + mailboxIn * 0.25})`; world.style.opacity = worldIn; world.style.transform = `translateX(-50%) scale(${0.85 + worldIn * 0.15})`; } animateHero(); window.addEventListener("scroll", animateHero); window.addEventListener("resize", animateHero); });</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const hero = document.querySelector(".kc-story-hero");
+        if (!hero) return;
+
+        const items = document.querySelectorAll(".kc-flow-item");
+        const envelope = document.querySelector(".kc-envelope");
+        const closedEnvelope = document.querySelector(".kc-envelope-closed");
+        const mailbox = document.querySelector(".kc-mailbox");
+        const world = document.querySelector(".kc-world");
+
+        const startX = [
+            -760, -620, -500, -360,
+            -220, -80, 80, 220,
+            360, 500, 640, 760
+        ];
+
+        const startY = [
+            -170, 90, -120, 140,
+            -60, 110, -90, 150,
+            -40, 120, -100, 70
+        ];
+
+        const endX = [-260, -230, -205, -178, -150, -222, -195, -165, -138, -112, -88, -185];
+        const endY = [-95, -82, -112, -88, -105, -58, -70, -62, -78, -92, -66, -48];
+
+        const rotate = [-14, 9, -12, 10, -7, 13, -9, 7, -10, 12, -13, 5];
+
+        function clamp(v, min, max) {
+            return Math.min(Math.max(v, min), max);
+        }
+
+        function fadeInOut(progress, start, end, outStart, outEnd) {
+            const fadeIn = clamp((progress - start) / (end - start), 0, 1);
+            const fadeOut = 1 - clamp((progress - outStart) / (outEnd - outStart), 0, 1);
+            return fadeIn * fadeOut;
+        }
+
+        function animateHero() {
+            const rect = hero.getBoundingClientRect();
+            const progress = clamp(-rect.top / (rect.height - window.innerHeight), 0, 1);
+
+            const itemMove = clamp(progress / 0.30, 0, 1);
+            const itemFade = clamp((progress - 0.37) / 0.10, 0, 1);
+
+            const openEnvelopeOpacity = fadeInOut(progress, 0.06, 0.16, 0.42, 0.50);
+            const closedOpacity = fadeInOut(progress, 0.48, 0.58, 0.66, 0.74);
+            const closedDrop = clamp((progress - 0.55) / 0.14, 0, 1);
+
+            const mailboxOpacity = clamp((progress - 0.66) / 0.10, 0, 1);
+            const worldOpacity = clamp((progress - 0.76) / 0.12, 0, 1);
+
+            envelope.style.opacity = openEnvelopeOpacity;
+            envelope.style.transform =
+                `translate(-50%, -50%) scale(${0.78 + openEnvelopeOpacity * 0.22})`;
+
+            closedEnvelope.style.opacity = closedOpacity;
+            closedEnvelope.style.transform =
+                `translate(-50%, ${-50 + closedDrop * 28}%) scale(${0.78 - closedDrop * 0.10}) rotate(${closedDrop * 4}deg)`;
+
+            mailbox.style.opacity = mailboxOpacity;
+            mailbox.style.transform =
+                `translate(-50%, -50%) scale(${0.78 + mailboxOpacity * 0.22})`;
+
+            world.style.opacity = worldOpacity;
+            world.style.transform =
+                `translate(-50%, -50%) scale(${0.85 + worldOpacity * 0.15})`;
+
+            items.forEach((item, i) => {
+                const x = startX[i] + (endX[i] - startX[i]) * itemMove;
+                const y = startY[i] + (endY[i] - startY[i]) * itemMove;
+                const r = rotate[i] * (1 - itemMove);
+                const scale = 1 - itemMove * 0.08;
+
+                item.style.transform = `translate(${x}px, ${y}px) rotate(${r}deg) scale(${scale})`;
+                item.style.opacity = 1 - itemFade;
+            });
+        }
+
+        animateHero();
+        window.addEventListener("scroll", animateHero);
+        window.addEventListener("resize", animateHero);
+    });
+</script>
