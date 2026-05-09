@@ -177,8 +177,14 @@
 
             playerVisual = createPlayerVisual(this, width / 2, height - 130);
 
-            playerHitbox = this.add.rectangle(width / 2, height - 105, 60, 100, 0xff0000, 0);
-            this.physics.add.existing(playerHitbox);
+            playerHitbox = this.add.rectangle(
+                width / 2,
+                height - 105,
+                width < 768 ? 110 : 85,
+                120,
+                0xff0000,
+                0
+            );            this.physics.add.existing(playerHitbox);
             playerHitbox.body.setCollideWorldBounds(true);
 
             targetX = playerHitbox.x;
@@ -525,10 +531,12 @@
             hand.setDepth(30);
             hand.setOrigin(0.5);
 
-            hand.body.setSize(120, 120);
+            const hitboxSize = width < 768 ? 260 : 190;
+            hand.body.setSize(hitboxSize, hitboxSize);
+
             hand.body.setOffset(
-                hand.width / 2 - 60,
-                hand.height / 2 - 60
+                hand.width / 2 - hitboxSize / 2,
+                hand.height / 2 - hitboxSize / 2
             );
 
             hand.baseX = x;
